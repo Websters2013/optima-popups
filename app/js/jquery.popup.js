@@ -46,25 +46,28 @@
 
                 return scrollBarWidth;
             },
-            _hide = function(){
-                _obj.css( {
+            _hide = function( elem ){
+                elem.css( {
                     overflowY: 'hidden'
                 } );
-                _scrollConteiner.css( {
-                    overflowY: 'auto',
-                    paddingRight: 0
-                } );
 
-                _obj.removeClass( 'popup_opened' );
-                _obj.addClass( 'popup_hide' );
+                elem.removeClass( 'popup_opened' );
+                elem.addClass( 'popup_hide' );
+
+                if( !($('.popup_opened').length)) {
+                    _scrollConteiner.css( {
+                        overflowY: 'auto',
+                        paddingRight: 0
+                    } );
+                }
 
                 _timer = setTimeout( function(){
 
-                    _obj.css ({
+                    elem.css ({
                         overflowY: 'auto'
                     });
 
-                    _obj.removeClass( 'popup_hide' );
+                    elem.removeClass( 'popup_hide' );
                 }, 300 );
 
             },
@@ -91,33 +94,36 @@
                 } );
                 _obj.on( {
                     click: function(){
-                        _hide();
+                        _hide( $(this) );
                         return false;
                     }
                 } );
                 _btnClose.on( {
                     click: function(){
-                        _hide();
+                        _hide($(this).parents('.popup'));
                         return false;
                     }
                 } );
             },
             _show = function( className ){
-                _setPopupContent( className );
+
+                var curContent = _contents.filter( '.popup__' + className),
+                    parent = curContent.parents('.popup'),
+                    otherContents = parent.find('.popup__content');
+
+                otherContents.css( { display: 'none' } );
+                curContent.css( { display: 'block' } );
 
                 _scrollConteiner.css( {
                     overflowY: 'hidden',
                     paddingRight: _getScrollWidth()
                 } );
-                _obj.addClass( 'popup_opened' );
+                parent.addClass( 'popup_opened' );
                 _centerWrap();
 
             },
             _setPopupContent = function( className ){
-                var curContent = _contents.filter( '.popup__' + className );
 
-                _contents.css( { display: 'none' } );
-                curContent.css( { display: 'block' } );
             };
 
         //public properties

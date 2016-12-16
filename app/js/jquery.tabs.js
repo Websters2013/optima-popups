@@ -24,7 +24,8 @@
             _window = $( window ),
             _tabsBtn = _obj.find( 'dt'),
             _tabsContent = _obj.find( 'dd'),
-            _mobileScreen = true;
+            _mobileScreen = true,
+            _globalWidth = 0;
 
         //private methods
         var _addClassForAnimation = function() {
@@ -45,7 +46,7 @@
                 _tabsBtn.on( {
                     click: function() {
 
-                        if( _window.width() < 992 ) {
+                        if( _window.width() < 1024 ) {
 
                             _slideContent( $( this) );
 
@@ -62,7 +63,9 @@
                 _window.on( {
                     load: function () {
 
-                        if( _window.width() >= 992 ) {
+                        _globalWidth = _window.width();
+
+                        if( _window.width() >= 1024 ) {
 
                             _setTopPos();
                             _setFirstActive();
@@ -77,16 +80,28 @@
                     },
                     resize: function() {
 
-                        if( _window.width() >= 992 ) {
+                        if( _globalWidth != _window.width() ) {
 
-                            _setTopPos();
-                            _setFirstActive();
-                            _mobileScreen = false;
+                            setTimeout( function() {
 
-                        } else {
+                                _globalWidth = _window.width();
 
-                            _resetStyle();
-                            _mobileScreen = true
+                            }, 100 );
+
+
+                            if( _window.width() >= 1024 ) {
+
+                                _setTopPos();
+                                _setFirstActive();
+                                _mobileScreen = false;
+
+                            } else {
+
+                                _resetStyle();
+                                _mobileScreen = true
+
+                            }
+
 
                         }
 
@@ -94,17 +109,23 @@
                 } );
 
             },
+            _addScroll = function() {
+
+                _tabsContent.perfectScrollbar( );
+
+            },
             _init = function() {
 
                 _obj[ 0 ].obj = _self;
                 _onEvents();
                 _addClassForAnimation();
+                _addScroll();
 
             },
             _setTopPos = function() {
 
                 _tabsContent.css( {
-                    top: _tabsBtn.eq( -1 ).position().top + _tabsBtn.eq( -1 ).innerHeight()
+                    top: _tabsBtn.eq( -1 ).position().top + _tabsBtn.eq( -1 ).outerHeight(true)
                 } );
 
             },
@@ -131,6 +152,7 @@
 
                     _tabsBtn.eq( 0 ).addClass( 'active' );
                     _setMinHeight( _tabsBtn.eq( 0 ) );
+                    _tabsBtn.eq( 0 ).next().height( _tabsBtn.eq( 0 ).next().find('.tabs__content').outerHeight(true) );
 
                 }
 
@@ -140,7 +162,7 @@
                 var nextElem = elem.next();
 
                 _obj.css( {
-                    'min-height': nextElem.find( '.tabs__content' ).height() + nextElem.position().top
+                    'min-height': nextElem.outerHeight(true) + nextElem.position().top
                 } );
 
             },
@@ -155,7 +177,7 @@
                     _tabsBtn.removeClass( 'active' );
                     _tabsContent.removeAttr( 'style' );
                     curItem.addClass( 'active' );
-                    nextContent.height( nextContentInner.innerHeight() );
+                    nextContent.height( nextContentInner.outerHeight(true) );
 
                 } else {
 

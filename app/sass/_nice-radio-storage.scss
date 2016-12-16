@@ -1,0 +1,38 @@
+.nice-radio-storage {
+  display: inline-block;
+  vertical-align: top;
+  user-select: none;
+  margin: 0 2px;
+
+  input[ type = radio ] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+
+    &:checked + label {
+      border-color: #222222;
+      box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.3), 2px 2px 1px 0 rgba(0,0,0,0.2) inset;
+
+    }
+
+    &:disabled + label {
+      cursor: default;
+      opacity: .5;
+    }
+
+  }
+  label {
+    display: block;
+    border: 1px solid #eeeeee;
+    padding: 6px;
+    height: 25px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 2px;
+    @include main-font6();
+    -webkit-transition: height 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: height 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+}

@@ -9,9 +9,11 @@
   height: 0;
   z-index: 10000;
   padding-top: 40px;
+  padding-bottom: 40px;
   background: $popup-back;
   text-align: center;
   transition: opacity 500ms ease-in-out;
+  //@include main-font1();
 
   &_opened {
     opacity: 1;
@@ -28,43 +30,47 @@
   &__wrap {
     position: relative;
     z-index: 2;
-    width: 527px;
+    width: 1050px;
     margin: 0 auto;
-    padding-bottom: 40px;
+
   }
 
   &__content {
     display: none;
     text-align: left;
-    padding: 20px 0;
+    background: #fff;
+    border: 1px solid #b7b7b7;
   }
 
   &__close {
     position: absolute;
-    top: 17px;
-    width: 15px;
-    height: 15px;
-    right: 18px;
-    text-indent: -5000px;
-    cursor: pointer;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+    right: 16px;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    @include main-font5();
+    color: #000;
 
-    &:after,
-    &:before {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: $popup-close-back;
-      transform-origin: center;
-      content: '';
-    }
-    &:after{
-      transform: translateY( 50% ) rotate( 45deg );
-    }
-    &:before {
-      transform: translateY( 50% ) rotate( -45deg );
-    }
+    //&:after,
+    //&:before {
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 0;
+    //  right: 0;
+    //  height: 3px;
+    //  background: $popup-close-back;
+    //  transform-origin: center;
+    //  content: '';
+    //}
+    //&:after{
+    //  transform: translateY( 50% ) rotate( 45deg );
+    //}
+    //&:before {
+    //  transform: translateY( 50% ) rotate( -45deg );
+    //}
 
     &:hover {
       opacity: 0.8;
@@ -81,6 +87,14 @@
     top: -9999px;
     width: 100px;
     height: 100px;
+  }
+
+}
+.popup_2 {
+  z-index: 10001;
+
+  .popup__wrap {
+    width: 852px;
   }
 
 }
