@@ -1,0 +1,68 @@
+.device-single {
+  max-width: 852px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 0 23px;
+}
+.device-single__inner {
+  @include flexbox();
+  @include flex-direction(row);
+  @include align-items(flex-start);
+  @include justify-content(space-between);
+
+  >div {
+    width: 27.2%;
+
+    &:first-child {
+     width: 60%;
+    }
+
+  }
+
+}
+.device-single__extras {
+  padding: 14px 20px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+}
+.device-single__title {
+  margin: 0 0 12px;
+  color: #000000;
+  font-size: 24px;
+  line-height: 30px;
+  @include main-font5();
+}
+.device-single__item {
+  margin: 0 auto 20px;
+  width: 150px;
+  @include main-font4();
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+
+  p {
+    margin-bottom: 2px;
+  }
+
+
+}
+.device-single__img {
+  overflow: hidden;
+  position: relative;
+  width: 110px;
+  height: 85px;
+  margin: 0 auto 1px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.device-single__price {
+  color: #4ba3fc;
+  margin-bottom: 15px !important;
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+}

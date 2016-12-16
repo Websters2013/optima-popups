@@ -1,6 +1,7 @@
 .nice-checkbox {
   display: inline-block;
   vertical-align: top;
+  margin: 0 0 16px;
   user-select: none;
 
   input[ type = checkbox ] {
@@ -23,15 +24,14 @@
   }
   label {
     position: relative;
-    display: flex;
     text-align: left;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     height: 20px;
     padding-left: 25px;
-    color: $nice-checkbox-color;
+    font-size: 12px;
+    line-height: 14px;
+    color: #222222;
     cursor: pointer;
+    @include lato();
 
     &:after,
     &:before {
@@ -40,22 +40,23 @@
     }
 
     &:after {
-      top: 0;
+      top: 3px;
       left: 0;
-      width: 15px;
-      height: 15px;
-      border: 2px solid $nice-checkbox-after-color;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #222222;
     }
 
     &:before {
       display: none;
-      top: 7px;
-      left: 7px;
-      border-radius: 50%;
-      background: $nice-checkbox-after-color;
-      width: 5px;
-      height: 5px;
-      content: '';
+      top: 5px;
+      left: 4px;
+      height: 4px;
+      width: 2px;
+      border-top: 1px solid #222222;
+      border-left: 1px solid #222222;
+      -webkit-transform: rotate(-133deg);
+      transform: rotate(-133deg);
     }
 
   }

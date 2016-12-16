@@ -1,65 +1,57 @@
 .websters-select {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: top;
-  box-sizing: border-box;
   position: relative;
-  width: 200px;
-  height: 22px;
-  border: 1px solid $websters-select-border;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 184px;
+  height: 42px;
+  border: 1px solid #dadde0;
+  cursor: pointer;
+  @include montserrat-light();
+  color: #272323;
 
   &_opened {
 
     .websters-select__arrow {
-      transform: rotate(180deg);
+      top: 12px;
+      right: 16px;
+      transform: translate( 50%, 50% ) rotate(225deg);
+      -webkit-transform: translate( 50%, 50% ) rotate(225deg);
     }
 
   }
 
   &__arrow{
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 20px;
+    top: 13px;
+    right: 11px;
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid #21c4d6;
+    border-right: 2px solid #21c4d6;
     transform-origin: center;
-    -webkit-transition: -webkit-transform 200ms ease-in-out;
-    transition: transform 200ms ease-in-out;
-
-    &:after,
-    &:before {
-      position: absolute;
-      top: 9px;
-      width: 10px;
-      height: 2px;
-      border-radius: 2px;
-      background: $websters-select-border;
-      content: '';
-    }
-
-    &:after {
-      left: 4px;
-      transform: rotate(70deg);
-
-    }
-
-    &:before {
-      right: 3px;
-      transform: rotate(-70deg);
-
-    }
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .3s ease, top .3s ease, right .3s ease;
+    transition: transform .3s ease, top .3s ease, right .3s ease;
   }
 
   &__item {
     overflow: hidden;
-    @include absoluteCenterY();
+    position: absolute;
+    top: 50%;
     right: 20px;
-    left: 5px;
-    padding: 1px 5px 0;
+    left: 8px;
+    padding: 1px 5px 1px;
     box-sizing: border-box;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: left;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    color: #3a3637;
+    font-size: 15px;
+    line-height: 15px;
   }
 
   &_mobile {
@@ -83,12 +75,38 @@
 
   }
 
+  &_per{
+    width: 183px;
+    height: 42px;
+
+    select {
+      position: absolute;
+      left: -100000px;
+    }
+
+    .websters-select__arrow{
+      top: 13px;
+    }
+
+    &.websters-select_opened{
+
+      .websters-select__arrow{
+        top: 18px;
+      }
+
+    }
+
+  }
+
   &__popup {
     overflow: hidden;
     position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
     z-index: 10;
     box-sizing: border-box;
-    border: 1px solid $websters-select-border;
+    border: 1px solid #dadde0;
     background: $websters-select-popup-back;
 
     ul {
@@ -96,20 +114,38 @@
     }
 
     li {
+      padding: 8px 10px;
+      font-size: 14px;
       white-space: nowrap;
       overflow: hidden;
       cursor: pointer;
+      transition: background-color .3s ease, color .3s ease;
+      -webkit-transition: background-color .3s ease, color .3s ease;
 
       &:hover {
         color: $websters-select-popup-item-active-color;
-        background: $websters-select-popup-item-active-back;
+        background-color: #00c4da;
       }
 
       &.active {
         color: $websters-select-popup-item-active-color !important;
-        background: $websters-select-popup-item-active-back !important;
+        background-color: #00c4da!important;
       }
 
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .websters-select {
+
+    &_per{
+      position: absolute;
+      top: 9px;
+      right: 26px;
     }
 
   }
