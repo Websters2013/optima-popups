@@ -1,0 +1,9 @@
+.site {
+  min-width: 768px;
+  min-height: 100%;
+  @include montserrat-regular;
+  background: url(../img/bg-site.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+

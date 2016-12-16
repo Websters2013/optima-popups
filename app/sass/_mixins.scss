@@ -1,0 +1,63 @@
+//fonts
+@mixin montserrat-extralight() {
+  font-family: 'montserrat-extralight', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin montserrat-light() {
+  font-family: 'montserrat-light', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin montserrat-regular() {
+  font-family: 'montserrat-regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin montserrat-bold() {
+  font-family: 'montserrat-bold', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin campton-light() {
+  font-family: "campton-light", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin campton-bold() {
+  font-family: "campton-bold", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin lato() {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin justify() {
+  text-align: justify;
+
+  &:after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+  }
+}
+
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+@mixin absoluteCenterX() {
+  position: absolute;
+  left: 50%;
+  transform: translateX( -50% );
+}
+@mixin absoluteCenterY() {
+  position: absolute;
+  top: 50%;
+  transform: translateY( -50% );
+}
