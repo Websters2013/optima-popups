@@ -129,36 +129,55 @@
 @media (min-width: $desktop) {
 
   .btn {
-    transition: background-color .3s ease, color .3s ease;
-    -webkit-transition: background-color .3s ease, color .3s ease;
+    transition: background-color .3s ease, color .3s ease, border .3s ease;
+    -webkit-transition: background-color .3s ease, color .3s ease, border .3s ease;
 
-    &_1:hover,
-    &_2:hover {
-      color: #fff;
-      background-color: #00c4da;
+      &_1,
+      &_2 {
 
-      &:before, &:after{
-        background-color: #fff;
+        &:hover {
+          color: #fff;
+          background-color: #00c4da;
+
+          &:before, &:after{
+            background-color: #fff;
+          }
+        }
+
+
+      }
+
+      &_3,
+      &_4,
+      &_8,
+      &_9,
+      &_7{
+
+        &:hover {
+          background-color: #ff8c11;
+          border-color: #ff8c11;
+        }
+
+      }
+      &_5{
+
+        &:hover {
+          background-color: #21c4d6;
+          color: #fff;
+        }
+
+      }
+      &_6{
+
+        &:hover {
+          background-color: #2095a6;
+          color: #fff;
+          border-color: #2095a6;
+
+        }
+
       }
 
     }
-
-    &_3:hover{
-      background-color: #ff8c11;
-    }
-
-    &_4:hover{
-      background-color: #ff8c11;
-    }
-    &_5:hover{
-      background-color: #21c4d6;
-      color: #fff;
-    }
-    &_6:hover{
-      background-color: #2095a6;
-      color: #fff;
-      border-color: #2095a6;
-    }
-  }
 
 }

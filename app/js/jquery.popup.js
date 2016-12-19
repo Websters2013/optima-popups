@@ -120,9 +120,14 @@
                 } );
                 parent.addClass( 'popup_opened' );
                 _centerWrap();
+                _setTopPos();
 
             },
-            _setPopupContent = function( className ){
+            _setTopPos = function(){
+
+                $('.tabs').find('dd').css( {
+                    top: $('.tabs').find('dt').eq( -1 ).position().top + $('.tabs').find('dt').eq( -1 ).outerHeight(true)
+                } );
 
             };
 
@@ -133,5 +138,6 @@
 
         _init();
     };
+
 } )();
 

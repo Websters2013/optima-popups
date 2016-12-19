@@ -55,13 +55,13 @@
     left: 0;
   }
   .tabs.tabs_animated1 .tabs__content {
-    transform: translateX(-120%);
+    transform: translateX(-120%) translateZ(0);
     transition: transform 0.3s ease 0.1s;
   }
   .tabs dt.active + dd .tabs__content {
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
   }
   .tabs.tabs_animated1 dt.active + dd .tabs__content {
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
   }
 }

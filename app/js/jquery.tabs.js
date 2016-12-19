@@ -111,7 +111,7 @@
             },
             _addScroll = function() {
 
-                _tabsContent.perfectScrollbar( );
+                _tabsContent.find('.tabs__content').perfectScrollbar( );
 
             },
             _init = function() {

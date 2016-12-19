@@ -9,7 +9,7 @@
     clip: rect(0, 0, 0, 0);
 
     &:checked + label {
-      box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3);
+      box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.3);
     }
 
     &:disabled + label {
