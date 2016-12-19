@@ -1,0 +1,80 @@
+.nice-check {
+  display: block;
+  margin: 0 0 20px;
+  user-select: none;
+
+  input[ type = checkbox ] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+
+    &:checked + label {
+
+      &:after{
+        border-color: #7ed960;
+        background-color: #7ed960;
+      }
+
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+
+    }
+
+    &:disabled + label {
+      cursor: default;
+      opacity: .5;
+    }
+
+  }
+
+  label {
+    position: relative;
+    text-align: left;
+    height: 18px;
+    width: 18px;
+    margin: 0;
+    padding-left: 32px;
+    @include montserrat-regular;
+    font-size: 15px;
+    line-height: 14px;
+    color: #161718;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      position: absolute;
+      content: '';
+    }
+
+    &:after {
+      top: -4px;
+      left: 0;
+      width: 18px;
+      height: 17px;
+      border: 1px solid #dadde0;
+      border-radius: 3px;
+      transition: background-color .3s ease, border-color .3s ease;
+      -webkit-transition: background-color .3s ease, border-color .3s ease;
+    }
+
+    &:before {
+      top: 0;
+      left: 7px;
+      width: 4px;
+      height: 7px;
+      border-bottom: 3px solid #fff;
+      border-right: 3px solid #fff;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 2;
+      content: '';
+      transition: opacity .3s ease, visibility .3s ease;
+      -webkit-transition: opacity .3s ease, visibility .3s ease;
+    }
+
+  }
+
+}

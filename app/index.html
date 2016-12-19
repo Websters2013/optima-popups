@@ -27,435 +27,160 @@
         <!-- popup__wrap -->
         <div class="popup__wrap">
 
+            <a href="#" class="popup__close"></a>
+
             <!-- popup__content -->
             <div class="popup__content popup__pops" style="display: block;">
 
-                <!-- devices-set -->
-                <div class="devices-set">
-
-                    <!-- devices-set__filters -->
-                    <div class="devices-set__filters">
-                        <div>
-
-                            <div class="devices-set__filters-type">
-                                <select name="type" id="type">
-                                    <option value="0">Type</option>
-                                    <option value="1">Type1</option>
-                                    <option value="2">Type2</option>
-                                    <option value="3">Type3</option>
-                                </select>
-                                <select name="brand" id="brand">
-                                    <option value="0">Brand</option>
-                                    <option value="1">Brand1</option>
-                                    <option value="2">Brand2</option>
-                                    <option value="3">Brand3</option>
-                                </select>
-                            </div>
-
-                            <div class="devices-set__filters-price">
-                                <span>Price Range</span>
-
-                                <div>
-                                    <label for="from">From</label>
-                                    <select name="from" id="from">
-                                        <option value="0">$0</option>
-                                        <option value="1">$100</option>
-                                        <option value="2">$100</option>
-                                        <option value="3">$100</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="up">Up to</label>
-                                    <select name="up" id="up">
-                                        <option value="0">$100</option>
-                                        <option value="1">$100</option>
-                                        <option value="2">$100</option>
-                                        <option value="3">$100</option>
-                                    </select>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div>
-
-                            <button class="btn btn_3" type="submit"><span>Filter</span></button>
-
-                        </div>
-
-
-
+                <!-- steps -->
+                <div class="steps">
+                    <div>
+                        <span class="active">Eligibility</span>
+                        <span>Select Device</span>
+                        <span>Select Plan</span>
+                        <span>Customize</span>
+                        <span>Summary</span>
                     </div>
-                    <!-- /devices-set__filters -->
-
-                    <!-- devices-set__items -->
-                    <div class="devices-set__items">
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison1" name="comparison1">
-                                    <label for="comparison1">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison2" name="comparison2">
-                                    <label for="comparison2">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison3" name="comparison3">
-                                    <label for="comparison3">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison4" name="comparison4">
-                                    <label for="comparison4">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison5" name="comparison5">
-                                    <label for="comparison5">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison6" name="comparison6">
-                                    <label for="comparison6">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison7" name="comparison7">
-                                    <label for="comparison7">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison8" name="comparison8">
-                                    <label for="comparison8">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison9" name="comparison9">
-                                    <label for="comparison9">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison10" name="comparison10">
-                                    <label for="comparison10">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison11" name="comparison11">
-                                    <label for="comparison11">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison12" name="comparison12">
-                                    <label for="comparison12">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison13" name="comparison13">
-                                    <label for="comparison13">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison14" name="comparison14">
-                                    <label for="comparison14">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                        <div>
-
-                            <!-- devices-set__product -->
-                            <div class="devices-set__product">
-
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
-                                <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
-                                <span class="devices-set__product-name">iPhone 7</span>
-                                <div class="devices-set__product-tags">
-                                    <span>Phone</span>
-                                    <span>Apple</span>
-                                </div>
-                                <div class="nice-checkbox">
-                                    <input type="checkbox" id="comparison15" name="comparison15">
-                                    <label for="comparison15">Add to comparison</label>
-                                </div>
-                                <div class="devices-set__product-price">
-                                    <span>$649</span>
-                                    Total Price
-                                </div>
-                            </div>
-                            <!-- /devices-set__product -->
-
-                        </div>
-                    </div>
-                    <!-- /devices-set__items -->
-
                 </div>
-                <!-- /devices-set -->
+                <!-- /steps -->
 
+                <!-- eligibility -->
+                <form class="eligibility" id="eligibility" method="get" action="/">
+
+                    <div class="popup__title">Eligibility</div>
+
+                    <div class="popup__note">Please check customer eligibility</div>
+
+                    <!-- eligibility__frame -->
+                    <div class="eligibility__frame">
+
+                        <!-- eligibility__address -->
+                        <div class="eligibility__address">
+
+                            <fieldset>
+                                <label for="country">Country<span>*</span></label>
+                                <select name="country" id="country" data-required>
+                                    <option value="0">Select Country</option>
+                                    <option value="1">Select Country</option>
+                                    <option value="2">Select Country</option>
+                                </select>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="zipcode">Zipcode<span>*</span></label>
+                                <input type="text" name="zip" id="zipcode" placeholder="Fill in zip code" data-required/>
+                                <label class="error">* Sorry, services are not available in the selected area</label>
+                            </fieldset>
+
+                        </div>
+                        <!-- /eligibility__address -->
+
+                        <!-- eligibility__categories -->
+                        <div class="eligibility__categories">
+
+                            <fieldset>
+                                <label for="business">Line of business <span></span></label>
+                                <select name="business" id="business">
+                                    <option value="0">Select Iine of business</option>
+                                    <option value="1">Select Iine of business</option>
+                                    <option value="2">Select Iine of business</option>
+                                </select>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="business">Account Category <span></span></label>
+
+                                <!-- eligibility__checkers -->
+                                <ul class="eligibility__checkers">
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="business-001"/>
+                                        <label for="business-001">Individual</label>
+                                    </li>
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="business-002"/>
+                                        <label for="business-002">Business</label>
+                                    </li>
+                                </ul>
+                                <!-- /eligibility__checkers -->
+
+                            </fieldset>
+                        </div>
+                        <!-- /eligibility__categories -->
+
+                        <!-- eligibility__column -->
+                        <div class="eligibility__column">
+
+                            <fieldset>
+                                <label for="business">Sub Category <span></span></label>
+
+                                <!-- eligibility__checkers -->
+                                <ul class="eligibility__checkers">
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="subcategory-001"/>
+                                        <label for="subcategory-001">Platinum</label>
+                                    </li>
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="subcategory-002"/>
+                                        <label for="subcategory-002">Gold</label>
+                                    </li>
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="subcategory-003"/>
+                                        <label for="subcategory-003">Silver</label>
+                                    </li>
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="subcategory-004"/>
+                                        <label for="subcategory-004">Regular</label>
+                                    </li>
+                                </ul>
+                                <!-- /eligibility__checkers -->
+
+                            </fieldset>
+
+                        </div>
+                        <!-- /eligibility__column -->
+
+                        <!-- eligibility__column -->
+                        <div class="eligibility__column">
+
+                            <fieldset>
+                                <label for="business">Level <span></span></label>
+
+                                <!-- eligibility__checkers -->
+                                <ul class="eligibility__checkers">
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="level-001"/>
+                                        <label for="level-001">Account</label>
+                                    </li>
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="level-002"/>
+                                        <label for="level-002">CFS</label>
+                                    </li>
+                                </ul>
+                                <!-- /eligibility__checkers -->
+
+                            </fieldset>
+
+                        </div>
+                        <!-- /eligibility__column -->
+
+                    </div>
+                    <!-- /eligibility__frame -->
+
+                    <!-- eligibility__footer -->
+                    <div class="eligibility__footer">
+
+                        <a href="#" class="btn btn_5">Previous</a>
+
+                        <div>
+                            <a href="#" class="btn btn_5">Close</a>
+                            <button type="submit" class="btn btn_6">Continue</button>
+                        </div>
+
+                    </div>
+                    <!-- /eligibility__footer -->
+
+                </form>
+                <!-- /eligibility -->
 
             </div>
             <!-- /popup__content -->
@@ -465,272 +190,6 @@
 
     </div>
     <!-- /popup -->
-
-    <!-- popup -->
-    <div class="popup popup_2">
-
-        <!-- popup__wrap -->
-        <div class="popup__wrap">
-
-            <!-- popup__content -->
-            <div class="popup__content popup__device-single">
-
-                <!-- device-single -->
-                <div class="device-single">
-
-                    <!-- device-single__inner -->
-                    <div class="device-single__inner">
-                        <div>
-
-                            <!-- device-single__main -->
-                            <div class="device-single__main">
-
-                                <div class="device-single__main-pic" style="background-image: url('pic/devices1.png')"></div>
-
-                                <h2 class="device-single__main-title">iPhone 7</h2>
-                                <p>An entirely new camera system. The brightest, most colorful iPhone display ever. The fastest performance and best battery life in an iPhone. Every bit as powerful as it looks—this is iPhone 7.</p>
-
-                                <!-- device-single__cart -->
-                                <div class="device-single__cart">
-                                    <form action="#">
-
-                                        <!-- device-single__cart-items -->
-                                        <div class="device-single__cart-items">
-                                            <span class="device-single__cart-title">Choose color:</span>
-
-                                            <!-- device-single__cart-colors -->
-                                            <div class="device-single__cart-colors">
-
-                                                <!-- nice-radio-colors -->
-                                                <div class="nice-radio-colors">
-                                                    <input type="radio" name="colors" id="color1" value="#000000" checked>
-                                                    <label for="color1" style="background-color: #000000"></label>
-                                                </div>
-                                                <!-- /nice-radio-colors -->
-
-                                                <!-- nice-radio-colors -->
-                                                <div class="nice-radio-colors">
-                                                    <input type="radio" name="colors" id="color2" value="#cc9a9a">
-                                                    <label for="color2" style="background-color: #cc9a9a"></label>
-                                                </div>
-                                                <!-- /nice-radio-colors -->
-
-                                                <!-- nice-radio-colors -->
-                                                <div class="nice-radio-colors">
-                                                    <input type="radio" name="colors" id="color3" value="#ffffff">
-                                                    <label for="color3" style="background-color: #ffffff"></label>
-                                                </div>
-                                                <!-- /nice-radio-colors -->
-
-                                            </div>
-                                            <!-- /device-single__cart-colors -->
-
-                                        </div>
-                                        <!-- /device-single__cart-items -->
-
-                                        <!-- device-single__cart-items -->
-                                        <div class="device-single__cart-items">
-                                            <span class="device-single__cart-title">Choose storage:</span>
-
-                                            <!-- device-single__cart-storages -->
-                                            <div class="device-single__cart-storages">
-
-                                                <!-- nice-radio-storage -->
-                                                <div class="nice-radio-storage">
-                                                    <input type="radio" name="storages" id="memory1" value="32GB" checked>
-                                                    <label for="memory1">32GB</label>
-                                                </div>
-                                                <!-- /nice-radio-storage -->
-
-                                                <!-- nice-radio-storage -->
-                                                <div class="nice-radio-storage">
-                                                    <input type="radio" name="storages" id="memory2" value="256GB">
-                                                    <label for="memory2">256GB</label>
-                                                </div>
-                                                <!-- /nice-radio-storage -->
-
-                                                <!-- nice-radio-storage -->
-                                                <div class="nice-radio-storage">
-                                                    <input type="radio" name="storages" id="memory3" value="512GB">
-                                                    <label for="memory3">512GB</label>
-                                                </div>
-                                                <!-- /nice-radio-storage -->
-
-                                            </div>
-                                            <!-- /device-single__cart-storages -->
-
-                                        </div>
-                                        <!-- /device-single__cart-items -->
-
-                                        <div class="device-single__cart-cost">
-                                            <div>
-                                                <span class="device-single__cart-cost-title">Price</span>
-                                                <select name="price" id="price">
-                                                    <option value="0">$0</option>
-                                                    <option value="1">$0</option>
-                                                    <option value="2">$0</option>
-                                                    <option value="3">$0</option>
-                                                </select>
-                                            </div>
-                                            <div>
-                                                <span class="device-single__cart-cost-title">Payments</span>
-                                                <div class="device-single__cart-payments">
-                                                    <div>
-                                                        <span>$65</span>
-                                                        Upfront
-                                                    </div>
-                                                    <div>
-                                                        <span>$15</span>
-                                                        Monthly
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- device-single__cart-check -->
-                                        <div class="device-single__cart-check">
-                                            <p>
-                                                <a href="#">Check hand-delivery availability</a>
-                                            </p>
-                                            <p>
-                                                <a href="#">Check in-store availability</a>
-                                            </p>
-                                        </div>
-                                        <!-- /device-single__cart-check -->
-
-                                        <!-- device-single__cart-send -->
-                                        <div class="device-single__cart-send">
-                                            <button class="btn btn_8"><span>Add to cart</span></button>
-                                        </div>
-                                        <!-- /device-single__cart-send -->
-
-                                    </form>
-                                </div>
-                                <!-- /device-single__cart -->
-
-                            </div>
-                            <!-- /device-single__main -->
-
-                            <!-- device-single__characteristics -->
-                            <div class="device-single__characteristics">
-
-                                <!-- device-single__characteristics-tabs -->
-                                <div class="device-single__characteristics-tabs">
-                                    <div class="tabs">
-                                        <dl>
-                                            <dt>Overview</dt>
-                                            <dd>
-                                                <div class="tabs__content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.                                </div>
-                                            </dd>
-                                            <dt>Details</dt>
-                                            <dd>
-                                                <div class="tabs__content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!
-                                                </div>
-                                            </dd>
-                                            <dt>In the box</dt>
-                                            <dd>
-                                                <div class="tabs__content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!
-                                                </div>
-                                            </dd>
-                                            <dt>FAQ</dt>
-                                            <dd>
-                                                <div class="tabs__content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                                <!-- /device-single__characteristics-tabs -->
-
-                            </div>
-                            <!-- /device-single__characteristics -->
-
-                        </div>
-                        <div>
-
-                            <!-- device-single__extras -->
-                            <div class="device-single__extras">
-                                <h2 class="device-single__title">Extras</h2>
-
-                                <!-- device-single__item -->
-                                <div class="device-single__item">
-
-                                    <div class="device-single__img" style="background-image: url('pic/device2.jpg')"></div>
-
-                                    <p>iPhone 7 case</p>
-                                    <p class="device-single__price">$15</p>
-
-                                    <a href="#" class="btn btn_7">Add to cart</a>
-
-                                </div>
-                                <!--/device-single__item -->
-
-                                <!-- device-single__item -->
-                                <div class="device-single__item">
-
-                                    <div class="device-single__img" style="background-image: url('pic/device3.jpg')"></div>
-
-                                    <p>Phone 7 screen
-                                        protector</p>
-                                    <p class="device-single__price">$15</p>
-
-                                    <a href="#" class="btn btn_7">Add to cart</a>
-
-                                </div>
-                                <!--/device-single__item -->
-
-                                <!-- device-single__item -->
-                                <div class="device-single__item">
-
-                                    <div class="device-single__img" style="background-image: url('pic/device4.jpg')"></div>
-
-                                    <p>iPhone charger</p>
-                                    <p class="device-single__price">$15</p>
-
-                                    <a href="#" class="btn btn_7">Add to cart</a>
-
-                                </div>
-                                <!--/device-single__item -->
-
-                                <!-- device-single__item -->
-                                <div class="device-single__item">
-
-                                    <div class="device-single__img" style="background-image: url('pic/device5.jpg')"></div>
-
-                                    <p>iPhone charger</p>
-                                    <p class="device-single__price">$15</p>
-
-                                    <a href="#" class="btn btn_7">Add to cart</a>
-
-                                </div>
-                                <!--/device-single__item -->
-
-                            </div>
-                            <!-- /device-single__extras -->
-
-                        </div>
-                    </div>
-                    <!-- /device-single__inner -->
-
-                </div>
-                <!-- /device-single -->
-
-
-            </div>
-            <!-- /popup__content -->
-
-        </div>
-        <!-- /popup__wrap -->
-
-    </div>
-    <!-- /popup -->
-
 
     <script src="js/vendors/jquery-2.2.1.min.js"></script>
     <script src="js/vendors/perfect-scrollbar.jquery.min.js"></script>

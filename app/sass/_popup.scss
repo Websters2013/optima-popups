@@ -42,35 +42,56 @@
     border: 1px solid #b7b7b7;
   }
 
-  &__close {
+  &__close{
+    position: absolute;
+    top: -24px;
+    right: -32px;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+
+    &:after,
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 14px;
+      height: 1px;
+      background: $popup-close-back;
+      transform-origin: center;
+      content: '';
+    }
+
+    &:after{
+      transform: translateX( -50% ) translateY( -50% ) rotate( 45deg );
+    }
+
+    &:before {
+      transform: translateX( -50% ) translateY( -50% ) rotate( -45deg );
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+  }
+
+  &__close-inside {
     position: absolute;
     top: 16px;
     width: 24px;
     height: 24px;
     right: 16px;
-    font-size: 21px;
-    line-height: 21px;
+    font-size: 30px;
     text-align: center;
-    @include main-font5();
+    @include main-font6();
     color: #000;
-
-    //&:after,
-    //&:before {
-    //  position: absolute;
-    //  top: 50%;
-    //  left: 0;
-    //  right: 0;
-    //  height: 3px;
-    //  background: $popup-close-back;
-    //  transform-origin: center;
-    //  content: '';
-    //}
-    //&:after{
-    //  transform: translateY( 50% ) rotate( 45deg );
-    //}
-    //&:before {
-    //  transform: translateY( 50% ) rotate( -45deg );
-    //}
+    text-transform: uppercase;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
 
     &:hover {
       opacity: 0.8;
@@ -89,7 +110,49 @@
     height: 100px;
   }
 
+  &__title{
+    margin: 0 25px 15px;
+    @include montserrat-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:before{
+      display: inline-block;
+      position: relative;
+      top: -3px;
+      width: 6px;
+      height: 6px;
+      border-right: 3px solid #000;
+      border-bottom: 3px solid #000;
+      margin-right: 12px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      content: '';
+    }
+
+  }
+
+  &__note{
+    margin: 0 23px 8px;
+    @include lato;
+    font-size: 14px;
+
+    &:before{
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      width: 23px;
+      height: 23px;
+      margin-right: 22px;
+      background-image: url(../img/icon-warning.png);
+      vertical-align: middle;
+      content: '';
+    }
+
+  }
+
 }
+
 .popup_2 {
   z-index: 10001;
 

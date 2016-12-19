@@ -1,0 +1,23 @@
+.btn-wrap {
+  text-align: center;
+
+  &__frame {
+    padding: 96px 0 85px;
+
+    .btn{
+      display: flex;
+      width: 180px;
+      margin: 0 auto 23px;
+    }
+
+  }
+
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 22px 22px;
+    border: 1px solid #eaeaea;
+  }
+
+}
