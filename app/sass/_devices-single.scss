@@ -122,8 +122,25 @@
   color: #000000;
   @include montserrat-extralight();
 }
-.device-single__main-title {
+.device-single__main-head {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  @include align-items(flex-start);
+  @include justify-content(space-between);
   margin: 0 0 10px;
+}
+.device-single__main-tags {
+  width: 53%;
+  padding-top: 13px;
+  word-spacing: 6px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  @include montserrat-extralight();
+}
+.device-single__main-title {
+  width: 45%;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
