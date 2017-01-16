@@ -39,7 +39,7 @@
     _toggleMenu = function () {
     	console.log(_password);
 
-    	_password.attr('type') = 'text';
+    	// _password.attr('type') = 'text';
   	  	
     };
   
@@ -48,4 +48,3 @@
   }
  
 } ) ();
->>>>>>> signin
