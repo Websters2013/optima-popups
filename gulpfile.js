@@ -40,6 +40,7 @@ var paths = {
         {
             dist: 'plans.min.js',
             contains: [
+                'app/js/jquery.index.js',
                 'app/js/jquery.websters-select.js',
                 'app/js/jquery.popup.js',
                 'app/js/jquery.tabs.js',
