@@ -20,10 +20,45 @@
 
         //private properties
         var _self = this,
-            _obj = obj;
+            _obj = obj,
+            _window = $(window);
 
         //private methods
-        var _addScroll = function() {
+        var _addEvents = function() {
+
+                _window.on( {
+                    resize: function() {
+
+                        if( _obj.hasClass('device-single__content') ) {
+
+                            if( _window.width()>1024 ) {
+
+                                _obj.perfectScrollbar('destroy');
+
+                            } else {
+
+                                _obj.perfectScrollbar();
+
+                            }
+
+                        }
+                    },
+                    load: function() {
+
+                        if( _obj.hasClass('device-single__content') ) {
+
+                            if( _window.width()>1024 ) {
+
+                                _obj.perfectScrollbar('destroy');
+
+                            }
+
+                        }
+                    }
+                } )
+
+            },
+            _addScroll = function() {
 
                 _obj.perfectScrollbar( {
                     wheelPropagation: true
@@ -32,6 +67,7 @@
             },
             _init = function(){
                 _obj[ 0 ].obj = _self;
+                _addEvents();
                 _addScroll();
             };
 
