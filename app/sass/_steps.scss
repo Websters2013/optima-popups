@@ -6,17 +6,20 @@
   div {
     @include flexbox();
     @include flex-direction();
-    @include align-items(center);
+    @include align-items(stretch);
     @include justify-content(space-between);
     background: #fff;
   }
 
-  span {
+  span,
+  a {
     position: relative;
-    display: block;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
     width: 25%;
     height: 50px;
-    padding: 16px 5px;
+    padding: 16px 10px;
     font-size: 15px;
     line-height: 18px;
     border-top: 1px solid #969da5;

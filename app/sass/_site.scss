@@ -1,10 +1,54 @@
 .site {
   position: relative;
   overflow: hidden;
-  min-width: 1000px;
+  min-width: 768px;
   min-height: 100%;
+  padding-bottom: 32px;
+  background: #f3f5f8;
   @include montserrat-regular();
-  background: url(../img/bg-site.jpg) no-repeat center;
   background-size: cover;
+}
+.site__content {
+  max-width: 1164px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  .steps {
+    margin: 0;
+  }
+
+}
+.site__content__inner {
+  position: relative;
+  background: #fff;
+  border: 1px solid #dadde0;
+  border-top: none;
+  min-height: 511px;
+}
+.site__content__footer {
+  @include flexbox();
+  @include flex-direction();
+  @include align-items(center);
+  @include justify-content(space-between);
+  //padding: 21px 21px;
+  padding: 11px 21px;
+  border-top: 1px solid #eaeaea;
+
+  >div {
+    width: 50%;
+    text-align: right;
+
+    >div {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 6px;
+    }
+
+    &:first-child {
+      text-align: left;
+    }
+
+  }
+
 }
 
