@@ -24,14 +24,18 @@
   border: 1px solid #dadde0;
   border-top: none;
   min-height: 511px;
+  padding-bottom: 83px;
 }
 .site__content__footer {
   @include flexbox();
   @include flex-direction();
   @include align-items(center);
   @include justify-content(space-between);
-  //padding: 21px 21px;
-  padding: 11px 21px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 11px 21px 11px 8px;
   border-top: 1px solid #eaeaea;
 
   >div {
