@@ -1,32 +1,142 @@
 .site {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
   min-width: 768px;
   min-height: 100%;
-  padding-bottom: 32px;
   background: #f3f5f8;
   @include montserrat-regular();
   background-size: cover;
 
-  &__header{
-    width: 100%;
-    height: 65px;
-    background-color: #1c4f8c;
 
-    &-layout{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      max-width: 1141px;
-      height: inherit;
-      margin: 0 auto;
-      padding-top: 1px;
+  &__header {
+    width: 1185px;
+    padding-top: 24px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    margin-left: 59px;
+  }
+
+  &__main {
+    width: 576px;
+    height: 670px;
+    padding-top: 178px;
+    padding-left: 91px;
+    margin: 0 auto;
+    background: url(../img/signin-bg.png) center center no-repeat;
+    background-size: cover;
+  }
+
+  &__main-title {
+    margin-bottom: 36px;
+    color: #231f20;
+    font-family: montserrat-regular;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__main-name, &__main-password {
+    display: block;
+    width: 225px;
+    height: 34px;
+    padding-left: 5px !important;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #c2c6cb;
+    font-family: montserrat-light;
+    font-size: 15px;
+
+    &::-webkit-input-placeholder {
+             color: #949ba3;
+             font-family: montserrat-light;
+           }
+           &:-moz-placeholder {
+             color: #949ba3;
+             font-family: montserrat-light;
+           }
+           &.placeholder {
+             color: #949ba3;
+             font-family: montserrat-light;
+           }
+  }
+
+  &__main-name {
+    margin-bottom: 19px;
+  }
+
+  &__main-password {
+    margin-bottom: 15px;
+  }
+
+  &__main-show {
+    color: #231f20 !important;
+    font-size: 14px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+  }
+
+  &__main-text-1 {
+    display: block;
+    padding-top: 27px;
+    margin-bottom: 5px;
+    color: #231f20;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  &__main-text-2 {
+    display: block;
+    margin-bottom: 28px;
+    color: #231f20;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    a {
+      color: #21c4d6;
+      font-weight: 800;
     }
+  }
 
+  &__main-btn {
+    position: relative;
+    background: none;
+    border: none;
+    color: #eaeaea;
+    font-size: 24px;
+    transform: translate(-9px);
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: -14px;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 17px;
+      background: url(../img/arrow.png) center center no-repeat;
+      background-size: cover;
+      content: '';
+    } 
+  }
+
+  &__footer {
+    width: 100%;
+    height: 53px;
+  }
+
+  &__footer-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-width: 1185px;
+    height: 100%;
+    margin: 0 auto;
   }
 
 }
+
 .site__content {
   max-width: 1164px;
   margin: 0 auto;

@@ -1,82 +1,51 @@
-( function(){
+"use strict";
+( function () {
 
-    "use strict";
+  $( function() {
 
-    $( function(){
-
-        $.each( $( '.menu-btn' ), function() {
-            new Menu ( $( this ) );
-        } );
-
+    $.each( $( '.show-psw' ), function() {
+       
+      new  Show ( $( this ) );
+       
     } );
 
-    var Menu = function( obj ) {
+  } );
 
-        //private properties
-        var _obj = obj,
-            _menu = $( '.menu' ),
-            _window = $( window );
+    
+  var Show = function ( obj ) {
+  
+    //private properties
+    var _checkbox = obj,
+    		_password = $('.site__main-password');
 
+    //private methods
+    var _constructor = function () {
 
-        //private methods
-        var _initSlider = function() {
+            _onEvents();
+    
+        },
+    _onEvents = function () {
+    
+        _checkbox = obj.on ( {
+            change: function () {
+             
+             _toggleMenu();
 
-                _obj.on( {
-                    'click': function() {
+            }
+        } );
+ 
+    },
+  
+    _toggleMenu = function () {
+    	console.log(_password);
 
-                        if ( _obj.hasClass( 'close' ) ) {
-
-                            _obj.removeClass( 'close' );
-                            _menu.removeClass( 'opened' );
-
-                        } else {
-
-                            _obj.addClass( 'close' );
-                            _menu.addClass( 'opened' );
-
-                            if ( _menu.height() - 10 > _window.height() ) {
-                                _initContentScroll();
-                                $( _menu ).getNiceScroll().show();
-                            } else {
-                                $( _menu ).getNiceScroll().hide();
-                            }
-
-                        }
-                        return false;
-                    }
-                } );
-                /*_window.on( {
-                    'resize': function() {
-
-                        if ( _menu.height() - 10 > _window.height() && _obj.hasClass( 'menu-btn_close' ) ) {
-                            _initContentScroll();
-                            $( _menu ).getNiceScroll().show();
-                        } else {
-                            $( _menu ).getNiceScroll().hide();
-                        }
-
-                    }
-                } )*/
-
-            },
-            _initContentScroll = function() {
-                $( _menu ).niceScroll( {
-                    autohidemode: 'false',
-                    cursorborder: '',
-                    cursorcolor: "#fff",
-                    cursorwidth: "6px",
-                    cursorborderradius: "0"
-                } );
-            },
-            _init = function() {
-                _initSlider();
-            };
-
-        //public properties
-
-        //public methods
-
-        _init();
+    	_password.attr('type') = 'text';
+  	  	
     };
-
-} )();
+  
+    _constructor ();
+  
+  }
+ 
+} ) ();
+>>>>>>> signin
