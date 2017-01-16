@@ -1,0 +1,69 @@
+.select-phone {
+  @include montserrat-regular();
+  color: #231f20;
+  font-size: 15px;
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 0;
+  }
+
+  table {
+    width: 100%;
+
+    tr {
+      position: relative;
+    }
+
+    th {
+      padding: 10px 10px;
+      @include montserrat-bold();
+      font-size: 11px;
+      color: #949ba3;
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        text-align: center;
+      }
+    }
+
+    td {
+      padding: 10px 10px;
+      border-bottom: 1px solid #eeeeee;
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        text-align: center;
+      }
+
+      a,
+      a:visited {
+        color: #231f20;
+      }
+
+      label {
+        display: block;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        border: 1px solid #dadde0;
+        box-sizing: border-box;
+        transition: border .15s ease-in-out;
+      }
+
+      input {
+        display: none;
+
+        &:checked + label {
+          border: 5px solid #ff8c11;
+        }
+      }
+
+      &.red {
+        color: #ff0000;
+      }
+    }
+  }
+}

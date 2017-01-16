@@ -10,7 +10,7 @@
     &:checked + label {
       &:before {
         top: 0px;
-        left: -2px;
+        left: 0px;
         width: 19px;
         height: 19px;
         border: 6px solid #ff8c00;
@@ -26,14 +26,14 @@
     justify-content: flex-start;
     align-items: center;
     height: 20px;
-    padding-left: 27px;
+    padding-left: 29px;
     cursor: pointer;
 
     &:before{
       position: absolute;
       border-radius: 50%;
       top: 0px;
-      left: -2px;
+      left: 0px;
       width: 18px;
       height: 18px;
       border: 2px solid #989fa7;

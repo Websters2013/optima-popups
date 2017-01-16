@@ -7,7 +7,9 @@
     font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
-    text-transform: uppercase;
+    border-top: 1px solid #eaeaea;
+
+    &:first-child { border: none }
 
     &:before{
       @include absoluteCenterY();
