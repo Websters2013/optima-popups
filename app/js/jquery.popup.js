@@ -125,9 +125,14 @@
             },
             _setTopPos = function(){
 
-                $('.tabs').find('dd').css( {
-                    top: $('.tabs').find('dt').eq( -1 ).position().top + $('.tabs').find('dt').eq( -1 ).outerHeight(true)
-                } );
+                if( $('.tabs').length ) {
+
+                    $('.tabs').find('dd').css( {
+                        top: $('.tabs').find('dt').eq( -1 ).position().top + $('.tabs').find('dt').eq( -1 ).outerHeight(true)
+                    } );
+
+                }
+
 
             };
 

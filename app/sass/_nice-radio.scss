@@ -50,6 +50,7 @@
 
     &:before {
       display: none;
+      z-index: 1;
       top: 7px;
       left: 7px;
       background: $nice-radio-after-color;
