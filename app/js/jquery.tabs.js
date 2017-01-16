@@ -16,6 +16,12 @@
             new Dropdown( $( this ) );
         } );
 
+        $.each( $( '.defaults__title' ), function() {
+           
+          new  Toggle ( $( this ) );
+           
+        } );
+
     } );
 
     var Tabs = function( params ) {
@@ -281,5 +287,39 @@
 
         _constructor();
     };
+
+    var Toggle = function ( obj ) {
+    
+      //private properties
+      var  _title = obj;
+
+      //private methods
+      var _constructor = function () {
+      
+              _onEvents();
+      
+          },
+      _onEvents = function () {
+      
+          _title.on ( {
+              click: function () {
+               
+               _addStyles();
+
+              }
+          } );
+
+      },
+    
+      _addStyles = function () {
+
+        _title.toggleClass('defaults__title_open');
+
+      };
+    
+      _constructor ();
+    
+    };
+
 } )();
 
