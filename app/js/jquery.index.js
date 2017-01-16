@@ -28,19 +28,17 @@
     
         _checkbox = obj.on ( {
             change: function () {
-             
-             _toggleMenu();
+                var elem = $( this ).prev();
+
+                if ( elem.attr( 'type' ) == 'password' ) {
+                    elem.attr('type', 'text');
+                } else {
+                    elem.attr('type', 'password')
+                }
 
             }
         } );
  
-    },
-  
-    _toggleMenu = function () {
-    	console.log(_password);
-
-    	// _password.attr('type') = 'text';
-  	  	
     };
   
     _constructor ();
