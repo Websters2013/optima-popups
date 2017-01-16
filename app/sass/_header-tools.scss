@@ -36,9 +36,11 @@
 @media (min-width: $desktop) {
 
   .header-tools {
-    padding: 7px 0 13px;
+    padding: 19px 0 13px;
+    margin-right: -10px;
 
     &__item, &__out{
+      margin-left: 12px;
       transition: background-color .3s ease;
       -webkit-transition: background-color .3s ease;
 

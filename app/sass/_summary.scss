@@ -1,7 +1,6 @@
 .summary {
   display: flex;
   justify-content: space-between;
-  padding-left: 33px;
 }
 .summary__item{
   display: inline-block;
@@ -19,6 +18,7 @@
 }
 .summary__title img{
   position: absolute;
+  top: 0;
   display: inline-block;
   vertical-align: middle;
   margin-left: 12px;
@@ -63,7 +63,7 @@
 .summary__item_device{
 }
 .summary__item_payment{
-  padding-left: 4.5%;
+  padding-left: 1.5%;
   width: 37%;
   border-left: 1px solid #eaeaea;
   font-family: 'montserrat-light', sans-serif;
@@ -77,3 +77,15 @@
 .summary__item li.summary__header-title {
    margin-bottom: 2px;
  }
+
+
+@media (min-width: $desktop) {
+
+  .summary {
+    padding-left: 33px;
+  }
+
+  .summary__item_payment {
+    padding-left: 4.5%;
+  }
+}

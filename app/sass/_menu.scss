@@ -130,7 +130,7 @@
     align-items: stretch;
     flex-flow: row nowrap;
     position: relative;
-    margin-left: 150px;
+    margin-left: 219px;
     padding: 0;
     background-color: transparent;
     visibility: visible;
@@ -138,7 +138,7 @@
 
     &__item {
       height: 64px;
-      padding: 0 10px 10px;
+      padding: 0 14px 6px;
       transition: border-top-color .3s ease, background-color .3s ease, box-shadow .3s ease;
       -webkit-transition: border-top-color .3s ease, background-color .3s ease, box-shadow .3s ease;
 
