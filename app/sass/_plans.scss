@@ -2,41 +2,6 @@
   width: 100%;
   padding: 0 21px;
 
-  &__title {
-    position: relative;
-    padding: 18px 33px;
-    @include montserrat-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    &:before{
-      @include absoluteCenterY();
-      left: 0;
-      width: 7px;
-      height: 7px;
-      margin: -3px 0 0 5px;
-      border-right: 2px solid #000;
-      border-bottom: 2px solid #000;
-      transform: rotate(-45deg);
-      transform-origin: center;
-      transition: transform .15s linear;
-      content: '';
-    }
-
-    &.active:before {
-      transform: rotate(45deg);
-    }
-
-    &.active + .plans__wrap {
-      height: 332px;
-    }
-  }
-
-  &__line {
-
-  }
-
   &__wrap {
     position: relative;
     overflow: hidden;
@@ -44,7 +9,7 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: stretch;
-    height: 0;
+    height: 332px;
     transition: height .3s linear;
   }
 
