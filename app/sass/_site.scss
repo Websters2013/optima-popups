@@ -16,11 +16,17 @@
 
     .site__header {
       height: auto;
+      padding: 0 20px;
       background: none;
+      max-width: 1170px;
+      margin: 0 auto;
     }
 
     .site__footer {
       height: auto;
+      padding: 0 20px;
+      max-width: 1170px;
+      margin: 0 auto;
     }
   }
 
@@ -42,7 +48,7 @@
   }
 
   &__logo {
-    margin-left: 59px;
+    //margin-left: 59px;
   }
 
   &__main {
