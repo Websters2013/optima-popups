@@ -1,0 +1,26 @@
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  max-width: 140px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+
+  img{
+    display: block;
+    width: 100%;
+  }
+
+  &_developer{
+    margin-left: 23px;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .logo {
+    left: 4px;
+  }
+
+}
