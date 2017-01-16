@@ -1,20 +1,29 @@
 .site {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
   overflow: hidden;
   min-width: 768px;
   min-height: 100%;
+  padding-bottom: 32px;
   background: #f3f5f8;
   @include montserrat-regular();
   background-size: cover;
 
 
   &__header {
-    width: 1185px;
-    padding-top: 24px;
-    margin: 0 auto;
+    width: 100%;
+    height: 65px;
+    background-color: #1c4f8c;
+
+    &-layout{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      max-width: 1141px;
+      height: inherit;
+      margin: 0 auto;
+      padding-top: 1px;
+    }
   }
 
   &__logo {
@@ -118,7 +127,7 @@
       background: url(../img/arrow.png) center center no-repeat;
       background-size: cover;
       content: '';
-    } 
+    }
   }
 
   &__footer {
@@ -137,6 +146,7 @@
 
 }
 
+}
 .site__content {
   max-width: 1164px;
   margin: 0 auto;
