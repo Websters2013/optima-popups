@@ -7,6 +7,25 @@
   background: #f3f5f8;
   @include montserrat-regular();
   background-size: cover;
+
+  &__header{
+    width: 100%;
+    height: 65px;
+    background-color: #1c4f8c;
+
+    &-layout{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      max-width: 1141px;
+      height: inherit;
+      margin: 0 auto;
+      padding-top: 7px;
+    }
+
+  }
+
 }
 .site__content {
   max-width: 1164px;
@@ -19,23 +38,24 @@
 
 }
 .site__content__inner {
+  overflow: hidden;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
   position: relative;
   background: #fff;
+  padding: 20px 20px 0;
   border: 1px solid #dadde0;
   border-top: none;
   min-height: 511px;
-  padding-bottom: 83px;
 }
 .site__content__footer {
   @include flexbox();
   @include flex-direction();
   @include align-items(center);
   @include justify-content(space-between);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 11px 21px 11px 8px;
+  margin: 0 -20px;
+  padding: 20px 21px;
   border-top: 1px solid #eaeaea;
 
   >div {
@@ -52,6 +72,9 @@
       text-align: left;
     }
 
+  }
+  .btn {
+    margin: 0;
   }
 
 }
