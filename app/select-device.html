@@ -113,8 +113,8 @@
             <!-- steps -->
             <div class="steps">
                 <div>
-                    <a href="#" class="active">Defaults & Eligibility</a>
-                    <a href="#">Select Device</a>
+                    <a href="#">Defaults & Eligibility</a>
+                    <a href="#" class="active">Select Device</a>
                     <a href="#">Select Plan & Customize</a>
                     <a href="#">Summary & Checkout</a>
                 </div>
@@ -193,12 +193,12 @@
                     <!-- /devices-set__filters -->
 
                     <!-- devices-set__items -->
-                    <div class="devices-set__items perfect-scroll-horiz">
+                    <div class="devices-set__items perfect-scroll">
                         <div>
 
                             <!-- devices-set__product -->
                             <div class="devices-set__product">
-                                <a href="#" class="devices-set__product-expand popup__open" data-popup="device-single"></a>
+                                <a href="#" class="devices-set__product-expand"></a>
                                 <div class="devices-set__product-pic" style="background-image: url(pic/devices1.png)"></div>
                                 <span class="devices-set__product-name">iPhone 7</span>
                                 <div class="devices-set__product-tags">
@@ -635,15 +635,15 @@
                 <!-- site__content__footer -->
                 <div class="site__content__footer">
                     <div>
-                        <div>
-                            <a href="#" class="btn btn_5">Back</a>
-                        </div>
+                        <a href="#" class="btn btn_5">Back</a>
                     </div>
                 </div>
                 <!-- /site__content__footer -->
 
                 <!-- device-single -->
                 <div class="device-single device-single_2">
+
+                    <a href="#" class="device-single__close"></a>
 
                     <!-- device-single__inner -->
                     <div class="device-single__inner">
@@ -790,56 +790,69 @@
 
 
                         </div>
-                        <div>
+                        <div class="device-single__dropdown">
 
-                            <!--&lt;!&ndash; device-single__characteristics &ndash;&gt;-->
-                            <!--<div class="device-single__characteristics">-->
+                            <!-- dropdown -->
+                            <div class="dropdown">
 
-                                <!--&lt;!&ndash; device-single__characteristics-tabs &ndash;&gt;-->
-                                <!--<div class="device-single__characteristics-tabs">-->
-                                    <!--<div class="tabs">-->
-                                        <!--<dl>-->
-                                            <!--<dt>Overview</dt>-->
-                                            <!--<dd>-->
-                                                <!--<div class="tabs__content">-->
-                                                    <!--<div>-->
-                                                        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</dd>-->
-                                            <!--<dt>Details</dt>-->
-                                            <!--<dd>-->
-                                                <!--<div class="tabs__content">-->
-                                                    <!--<div>-->
-                                                        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</dd>-->
-                                            <!--<dt>In the box</dt>-->
-                                            <!--<dd>-->
-                                                <!--<div class="tabs__content">-->
-                                                    <!--<div>-->
-                                                        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</dd>-->
-                                            <!--<dt>FAQ</dt>-->
-                                            <!--<dd>-->
-                                                <!--<div class="tabs__content">-->
-                                                    <!--<div>-->
-                                                        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!-->
-                                                        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!-->
-                                                        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorem eos error fugit ipsum laudantium magni minus quam, recusandae repellendus saepe unde veniam, voluptatem? Doloremque ducimus neque odio quam soluta!-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</dd>-->
-                                        <!--</dl>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--&lt;!&ndash; /device-single__characteristics-tabs &ndash;&gt;-->
+                                <!-- dropdown__title -->
+                                <h2 class="dropdown__title active">Overview</h2>
+                                <!-- /dropdown__title -->
 
-                            <!--</div>-->
-                            <!--&lt;!&ndash; /device-single__characteristics &ndash;&gt;-->
+                                <!-- dropdown__wrap -->
+                                <div class="dropdown__wrap">
+
+                                    <div class="device-single__dropdown-text">
+                                        <p>An entirely new camera system. The brightest, most colorful iPhone display ever. The fastest performance and best battery life in an iPhone. Every bit as powerful as it looks—this is iPhone 7.</p>
+                                    </div>
+
+                                </div>
+                                <!-- /dropdown__wrap -->
+
+                                <!-- dropdown__title -->
+                                <h2 class="dropdown__title">Details</h2>
+                                <!-- /dropdown__title -->
+
+                                <!-- dropdown__wrap -->
+                                <div class="dropdown__wrap">
+
+                                    <div class="device-single__dropdown-text">
+                                        <p>An entirely new camera system. The brightest, most colorful iPhone display ever. The fastest performance and best battery life in an iPhone. Every bit as powerful as it looks—this is iPhone 7.</p>
+                                    </div>
+
+                                </div>
+                                <!-- /dropdown__wrap -->
+
+                                <!-- dropdown__title -->
+                                <h2 class="dropdown__title">In The Box</h2>
+                                <!-- /dropdown__title -->
+
+                                <!-- dropdown__wrap -->
+                                <div class="dropdown__wrap">
+
+                                    <div class="device-single__dropdown-text">
+                                        <p>An entirely new camera system. The brightest, most colorful iPhone display ever. The fastest performance and best battery life in an iPhone. Every bit as powerful as it looks—this is iPhone 7.</p>
+                                    </div>
+
+                                </div>
+                                <!-- /dropdown__wrap -->
+
+                                <!-- dropdown__title -->
+                                <h2 class="dropdown__title">FAQ</h2>
+                                <!-- /dropdown__title -->
+
+                                <!-- dropdown__wrap -->
+                                <div class="dropdown__wrap">
+
+                                    <div class="device-single__dropdown-text">
+                                        <p>An entirely new camera system. The brightest, most colorful iPhone display ever. The fastest performance and best battery life in an iPhone. Every bit as powerful as it looks—this is iPhone 7.</p>
+                                    </div>
+
+                                </div>
+                                <!-- /dropdown__wrap -->
+
+                            </div>
+                            <!-- /dropdown -->
 
                         </div>
                     </div>
@@ -941,25 +954,6 @@
 
     </div>
     <!-- /site -->
-
-    <!--&lt;!&ndash; popup &ndash;&gt;-->
-    <!--<div class="popup popup_2">-->
-
-        <!--&lt;!&ndash; popup__wrap &ndash;&gt;-->
-        <!--<div class="popup__wrap">-->
-
-            <!--&lt;!&ndash; popup__content &ndash;&gt;-->
-            <!--<div class="popup__content popup__device-single">-->
-
-               <!-- -->
-            <!--</div>-->
-            <!--&lt;!&ndash; /popup__content &ndash;&gt;-->
-
-        <!--</div>-->
-        <!--&lt;!&ndash; /popup__wrap &ndash;&gt;-->
-
-    <!--</div>-->
-    <!--&lt;!&ndash; /popup &ndash;&gt;-->
 
     <script src="js/vendors/jquery-2.2.1.min.js"></script>
     <script src="js/vendors/perfect-scrollbar.jquery.min.js"></script>
