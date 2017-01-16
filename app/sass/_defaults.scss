@@ -10,12 +10,10 @@
       left:15px;
     }
 
-    &_open {
-      border-bottom: none;
-    }
 
     &_2 {
       padding-top: 18px;
+      border-bottom: none;
       &:before {
         top: 22px;
       }
@@ -29,7 +27,6 @@
     padding-left: 21px;
     padding-bottom: 18px;
     margin-bottom: 11px;
-    border-bottom: 1px solid #eaeaea;
   }
 
   &__res {
@@ -61,7 +58,6 @@
 
   &__wrap-2 {
     padding: 16px 0 0 21px;
-    border-bottom: 1px solid #eaeaea;
   }
 
   label {

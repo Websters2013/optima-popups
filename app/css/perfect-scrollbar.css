@@ -113,14 +113,14 @@
       background-color: #999; }
 
 .ps-container > .ps-scrollbar-y-rail{
-  opacity: 1 !important;
-  background: transparent !important;
-  width: 5px !important;
-  top: 8px;
-  height: auto;
-  bottom: 8px;
-  right: 8px;
-}
+   opacity: 1 !important;
+   background: transparent !important;
+   width: 5px !important;
+   top: 8px;
+   height: auto;
+   bottom: 8px;
+   right: 8px;
+ }
 .ps-container > .ps-scrollbar-y-rail:after {
   position: absolute;
   top: 0;
@@ -136,6 +136,34 @@
   background: #02c4d8 !important;
   border-radius: 0;
   width: 5px !important;
+  right: 0;
+  z-index: 2;
+}
+
+.ps-container > .ps-scrollbar-x-rail{
+  opacity: 1 !important;
+  background: transparent !important;
+  height: 5px !important;
+  left: 8px;
+  width: auto;
+  right: 8px;
+  bottom: 17px;
+}
+.ps-container > .ps-scrollbar-x-rail:after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: '';
+}
+.ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+  background: #222 !important;
+  border-radius: 0;
+  height: 5px !important;
   right: 0;
   z-index: 2;
 }
