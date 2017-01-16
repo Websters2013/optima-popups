@@ -38,8 +38,6 @@
                     'click': function () {
                         var curElem = $( this );
 
-                        console.log(1)
-
                         curElem.toggleClass( 'active' );
 
                         return false;
