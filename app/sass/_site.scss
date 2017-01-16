@@ -7,7 +7,12 @@
   background: #f3f5f8;
   @include montserrat-regular();
   background-size: cover;
+
+  &__header {
+    
+  }
 }
+
 .site__content {
   max-width: 1164px;
   margin: 0 auto;
