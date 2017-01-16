@@ -12,6 +12,7 @@
 
     &_open {
       border-bottom: none;
+      padding-bottom: 0;
     }
 
     &_2 {
@@ -29,7 +30,6 @@
     padding-left: 21px;
     padding-bottom: 18px;
     margin-bottom: 11px;
-    border-bottom: 1px solid #eaeaea;
   }
 
   &__res {
@@ -61,7 +61,6 @@
 
   &__wrap-2 {
     padding: 16px 0 0 21px;
-    border-bottom: 1px solid #eaeaea;
   }
 
   label {
