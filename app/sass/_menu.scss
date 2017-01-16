@@ -40,7 +40,7 @@
 
     &:hover{
       color: #7ed960!important;
-      @include montserrat-regular;
+      @include montserrat-light;
     }
 
     &.active{
@@ -137,8 +137,8 @@
     opacity: 1;
 
     &__item {
-      height: 64px;
-      padding: 0 10px;
+      height: 70px;
+      padding: 0 10px 10px;
       transition: border-top-color .3s ease, background-color .3s ease, box-shadow .3s ease;
       -webkit-transition: border-top-color .3s ease, background-color .3s ease, box-shadow .3s ease;
 

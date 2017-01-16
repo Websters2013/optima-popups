@@ -1,0 +1,54 @@
+.header-tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 20px 13px 150px;
+
+  &__item{
+    margin-left: 10px;
+    padding: 10px;
+
+    img{
+      display: block;
+      height: 21px;
+    }
+
+  }
+
+  &__out{
+    position: relative;
+    margin: 0 21px 0 11px;
+    padding: 10px;
+
+    &:after{
+      position: absolute;
+      top: 1px;
+      right: -11px;
+      height: 40px;
+      border-right: 1px solid #3d679b;
+      content: '';
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .header-tools {
+    padding: 7px 0 13px;
+
+    &__item, &__out{
+      transition: background-color .3s ease;
+      -webkit-transition: background-color .3s ease;
+
+      &:hover{
+        background-color: #19467c;
+      }
+
+    }
+
+  }
+
+
+}
