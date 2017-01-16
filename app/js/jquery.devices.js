@@ -7,6 +7,7 @@
             new AddScroll($(this));
 
         });
+
         $( '.devices-set_2 .devices-set__product-expand' ).each(function(){
 
             new DevicePopup($(this));
