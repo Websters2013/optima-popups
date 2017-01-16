@@ -124,17 +124,40 @@
             <!-- site__content__inner -->
             <div class="site__content__inner">
 
+<!--               <div class="dropdown">
+                  <div class="dropdown__title">Customer Number</div>
+                  <div class="dropdown__wrap">
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                  </div>
+                  <div class="dropdown__title">Select Number</div>
+                  <div class="dropdown__wrap">
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
+                  </div>
+              </div> -->
+
               <!-- defaults -->
-              <div class="defaults">
+              <div class="defaults dropdown">
 
                 <form action="" method="">
 
                   <!-- defaults__title -->
-                  <p class="defaults__title defaults__title-1">SETUP PRIMARY PROPERTIES AS</p>
+                  <p class="dropdown__title defaults__title">SETUP PRIMARY PROPERTIES AS</p>
                   <!-- /defaults__title -->
                 
                   <!-- defaults__wrap-1 -->
-                  <div class="defaults__wrap-1 nice-radio-orange">
+                  <div class="defaults__wrap-1 nice-radio-orange dropdown__wrap">
                   
                     <!-- defaults__res -->
                     <div class="defaults__res">
@@ -194,68 +217,43 @@
                   <!-- /defaults__wrap-1 -->
 
                   <!-- defaults__title -->
-                  <p class="defaults__title defaults__title-2">Eligibility</p>
+                  <p class="dropdown__title defaults__title">Eligibility</p>
                   <!-- /defaults__title -->
 
                   <!-- defaults__wrap-2 -->
-                  <div class="defaults__wrap-2 nice-radio-orange">
-                  
-                    <!-- defaults__res -->
-                    <div class="defaults__res">
-                    
-                      <!-- defaults__res-title -->
-                      <p class="defaults__res-title">
-                        Residential
-                      </p>
-                      <!-- /defaults__res-title -->
+                  <div class="defaults__wrap-2 dropdown__wrap eligibility">
 
-                      <p>
-                        <input type="radio" checked id="res-1" name="res" value="">
-                        <label for="res-1">Generic</label>
-                      </p>
+                    <div class="defaults__text popup__note">Please check customer eligibility</div>
 
-                      <p>
-                        <input type="radio" id="res-2" name="res" value="">
-                        <label for="res-2">New Student</label>
-                      </p>
+                    <!-- defaults__container -->
+                    <div class="defaults__container">
 
-                      <p>
-                        <input type="radio" id="res-3" name="res" value="">
-                        <label for="res-3">New Something</label>
-                      </p>
-                        
+                      <!-- eligibility__address -->
+                      <div class="eligibility__address">
+
+                        <fieldset>
+                            <label for="country">Country<span>*</span></label>
+                            <select name="country" id="country" data-required>
+                                <option value="0">Select Country</option>
+                                <option value="1">Select Country</option>
+                                <option value="2">Select Country</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="zipcode">Zipcode<span>*</span></label>
+                            <input type="text" name="zip" id="zipcode" placeholder="Fill in zip code" data-required/>
+                            <label class="error">* Sorry, services are not available in the selected area</label>
+                        </fieldset>
+
+                      </div>
+                      <!-- /eligibility__address -->
+
                     </div>
-                    <!-- /default__res -->
+                    <!-- /defaults__container -->
 
-                    <!-- defaults__business -->
-                    <div class="defaults__business">
-                    
-                      <!-- defaults__business-title -->
-                      <p class="defaults__business-title">
-                        Business
-                      </p>
-                      <!-- /defaults__business-title -->
-
-                      <p>
-                        <input type="radio" checked id="bus-1" name="bus" value="">
-                        <label for="bus-1">Generic</label>
-                      </p>
-
-                      <p>
-                        <input type="radio" id="bus-2" name="bus" value="">
-                        <label for="bus-2">New Start-up</label>
-                      </p>
-
-                      <p>
-                        <input type="radio" id="bus-3" name="bus" value="">
-                        <label for="bus-3">New SME Business</label>
-                      </p>
-                        
-                    </div>
-                    <!-- /defaults__business -->
-                      
                   </div>
-                  <!-- /defaults__wrap-2 -->
+                  <!-- defaults__wrap-2 -->  
                     
                 <form>
 

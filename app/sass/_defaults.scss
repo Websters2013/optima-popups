@@ -1,65 +1,21 @@
 .defaults {
   padding: 17px 0 0 21px;
 
-  &__title-1 {
-    margin-bottom: 64px;
-    color: #231f20;
-    font-family: montserrat-medium;
-    font-size: 15px;
-    text-transform: uppercase;
-    cursor: pointer;
+  &__title {
+    padding: 2px 0px 0px 20px;
 
     &:before {
-      display: inline-block;
-      position: relative;
-      top: -3px;
-      width: 6px;
-      height: 6px;
-      border-right: 2px solid #000;
-      border-bottom: 2px solid #000;
-      margin-right: 12px;
-      transform: rotate(-45deg);
-      transition: transform 0.3s;
-      content: '';
+      top: 6px;
+      left: -3px;
     }
-
-  }
-
-  &__title-2 {
-    margin-bottom: 64px;
-    color: #231f20;
-    font-family: montserrat-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    &:before {
-      display: inline-block;
-      position: relative;
-      top: -3px;
-      width: 6px;
-      height: 6px;
-      border-right: 2px solid #000;
-      border-bottom: 2px solid #000;
-      margin-right: 12px;
-      transform: rotate(-45deg);
-      transition: transform 0.3s;
-      content: '';
-    }
-
-  }
-
-  &__title_open {
-    margin-bottom: 0 !important;
-    &:before {
-      transform: rotate(45deg);
-    }   
   }
 
   &__wrap-1 {
-    display: none;
+    width: 100%;
     padding-top: 18px;
     padding-bottom: 18px;
+    margin-bottom: 11px;
+    border-bottom: 1px solid #eaeaea;
   }
 
   &__res {
@@ -89,9 +45,17 @@
     }  
   }
 
+  &__wrap-2 {
+    padding: 16px 0 0 0;
+  }
+
   label {
     color: #777;
     font-family: montserrat-light;
     font-size: 14px;
+  }
+
+  &__text {
+    margin: 0 0 9px 0;
   }
 }
