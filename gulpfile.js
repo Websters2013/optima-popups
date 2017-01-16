@@ -141,6 +141,7 @@ gulp.task('watch', function() {
     gulp.watch(paths.styles,    ['styles', browserSync.reload]);
     gulp.watch(paths.vendorStyles,    [ 'vendorStyles' ]);
     gulp.watch(paths.views,     ['views',   browserSync.reload]);
+
 });
 
 function serve() {
