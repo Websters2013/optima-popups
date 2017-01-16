@@ -1,18 +1,32 @@
 .defaults {
-  padding: 17px 0 0 21px;
+  padding: 17px 0 0 0;
 
   &__title {
-    padding: 2px 0px 0px 20px;
+    padding: 2px 0px 19px 41px;
+    border-bottom: 1px solid #eaeaea;
 
     &:before {
       top: 6px;
-      left: -3px;
+      left:15px;
+    }
+
+    &_open {
+      border-bottom: none;
+    }
+
+    &_2 {
+      padding-top: 18px;
+      &:before {
+        top: 22px;
+      }
     }
   }
 
   &__wrap-1 {
+    display: none;
     width: 100%;
     padding-top: 18px;
+    padding-left: 21px;
     padding-bottom: 18px;
     margin-bottom: 11px;
     border-bottom: 1px solid #eaeaea;
@@ -46,7 +60,8 @@
   }
 
   &__wrap-2 {
-    padding: 16px 0 0 0;
+    padding: 16px 0 0 21px;
+    border-bottom: 1px solid #eaeaea;
   }
 
   label {
@@ -57,5 +72,15 @@
 
   &__text {
     margin: 0 0 9px 0;
+  }
+
+  &__inp {
+    width: 337px !important;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }

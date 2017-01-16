@@ -124,29 +124,6 @@
             <!-- site__content__inner -->
             <div class="site__content__inner">
 
-<!--               <div class="dropdown">
-                  <div class="dropdown__title">Customer Number</div>
-                  <div class="dropdown__wrap">
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                  </div>
-                  <div class="dropdown__title">Select Number</div>
-                  <div class="dropdown__wrap">
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                      <p>sdf,hasdkfdsf adsf adsf adsf asdf asdf</p>
-                  </div>
-              </div> -->
-
               <!-- defaults -->
               <div class="defaults dropdown">
 
@@ -217,7 +194,7 @@
                   <!-- /defaults__wrap-1 -->
 
                   <!-- defaults__title -->
-                  <p class="dropdown__title defaults__title">Eligibility</p>
+                  <p class="dropdown__title defaults__title defaults__title_2">Eligibility</p>
                   <!-- /defaults__title -->
 
                   <!-- defaults__wrap-2 -->
@@ -242,12 +219,44 @@
 
                         <fieldset>
                             <label for="zipcode">Zipcode<span>*</span></label>
-                            <input type="text" name="zip" id="zipcode" placeholder="Fill in zip code" data-required/>
+                            <input class="defaults__inp" type="text" name="zip" id="zipcode" placeholder="Fill in zip code" data-required />
                             <label class="error">* Sorry, services are not available in the selected area</label>
                         </fieldset>
 
                       </div>
                       <!-- /eligibility__address -->
+
+                      <!-- eligibility__column -->
+                      <div class="eligibility__column">
+
+                          <fieldset>
+                              <label for="business">Customer Type <span></span></label>
+
+                              <!-- eligibility__checkers -->
+                              <ul class="eligibility__checkers">
+                                  <li class="nice-check">
+                                      <input type="checkbox" id="t1"/>
+                                      <label for="t1">Platinum</label>
+                                  </li>
+                                  <li class="nice-check">
+                                      <input type="checkbox" id="t2"/>
+                                      <label for="t2">Gold</label>
+                                  </li>
+                                  <li class="nice-check">
+                                      <input type="checkbox" id="t3"/>
+                                      <label for="t3">Silver</label>
+                                  </li>
+                                  <li class="nice-check">
+                                      <input type="checkbox" id="t4"/>
+                                      <label for="t4">Regular</label>
+                                  </li>
+                              </ul>
+                              <!-- /eligibility__checkers -->
+
+                          </fieldset>
+
+                      </div>
+                      <!-- /eligibility__column -->
 
                     </div>
                     <!-- /defaults__container -->
