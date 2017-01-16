@@ -157,4 +157,12 @@
       }
     }
   }
+
+  .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+    background: #222222 !important;
+  }
+
+  .ps-container > .ps-scrollbar-y-rail:after {
+    background: #b1b9c3;
+  }
 }
