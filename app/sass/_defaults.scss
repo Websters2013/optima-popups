@@ -2,10 +2,12 @@
   padding: 17px 0 0 21px;
 
   &__title-1 {
+    margin-bottom: 64px;
     color: #231f20;
     font-family: montserrat-medium;
     font-size: 15px;
     text-transform: uppercase;
+    cursor: pointer;
 
     &:before {
       display: inline-block;
@@ -17,11 +19,45 @@
       border-bottom: 2px solid #000;
       margin-right: 12px;
       transform: rotate(-45deg);
+      transition: transform 0.3s;
       content: '';
     }
+
+  }
+
+  &__title-2 {
+    margin-bottom: 64px;
+    color: #231f20;
+    font-family: montserrat-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:before {
+      display: inline-block;
+      position: relative;
+      top: -3px;
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+      margin-right: 12px;
+      transform: rotate(-45deg);
+      transition: transform 0.3s;
+      content: '';
+    }
+
+  }
+
+  &__title_open {
+    margin-bottom: 0 !important;
+    &:before {
+      transform: rotate(45deg);
+    }   
   }
 
   &__wrap-1 {
+    display: none;
     padding-top: 18px;
     padding-bottom: 18px;
   }
