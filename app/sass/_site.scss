@@ -8,6 +8,20 @@
   @include montserrat-regular();
   background-size: cover;
 
+  &.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .site__header {
+      height: auto;
+      background: none;
+    }
+
+    .site__footer {
+      height: auto;
+    }
+  }
 
   &__header {
     width: 100%;
