@@ -266,6 +266,7 @@
                         if ( curElem.hasClass( 'active' ) ) {
                             _hide( curElem );
                         } else {
+                            _hide( _title );
                             _open( curElem );
                         }
                         return false;
