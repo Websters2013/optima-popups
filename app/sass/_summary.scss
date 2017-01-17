@@ -79,14 +79,12 @@
 }
 
 @media (min-width: $desktop) {
-
   .summary {
     padding-left: 33px;
   }
   .summary .summary__item:first-child {
     padding-right: 31px;
   }
-
   .summary__item_payment {
     padding-left: 4.5%;
   }
