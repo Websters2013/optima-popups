@@ -201,6 +201,9 @@
     border: 1px solid #777;
   }
 
+  &:hover {
+    color: #ff8c00;
+  }
   &.active {
 
     &:after {
