@@ -240,7 +240,7 @@
             _open = function( elem ) {
                 var nextElem = elem.next();
 
-                $( '.dropdown__title' ).removeClass('active');
+                _obj.find( '.dropdown__title' ).removeClass('active');
                 _wrap.slideUp();
                 
                 elem.addClass( 'active' );
