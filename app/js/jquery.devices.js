@@ -8,7 +8,7 @@
 
         });
 
-        $( '.devices-set_2 .devices-set__product-expand' ).each(function(){
+        $( '.devices-set_2 .devices-set__product .devices-set__product-expand, .devices-set_2 .devices-set__product .btn' ).each(function(){
 
             new DevicePopup($(this));
 
