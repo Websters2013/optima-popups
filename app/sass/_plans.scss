@@ -9,11 +9,17 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: stretch;
-    height: 332px;
     transition: height .3s linear;
   }
 
+  .dropdown__wrap {
+    height: 332px;
+  }
+
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 252px;
     margin: 0 0 25px 0;
@@ -48,7 +54,7 @@
 
       span {
         position: relative;
-        padding: 0 40px 0 21px;
+        padding: 0 35px 0 21px;
 
         &:after {
           position: absolute;

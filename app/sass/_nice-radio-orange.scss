@@ -9,11 +9,11 @@
 
     &:checked + label {
       &:before {
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: 19px;
         height: 19px;
-        border: 6px solid #ff8c00;
+        border: 5px solid #ff8c11;
       }
     }
   }
@@ -32,11 +32,12 @@
     &:before{
       position: absolute;
       border-radius: 50%;
-      top: 0px;
-      left: 0px;
-      width: 18px;
-      height: 18px;
-      border: 2px solid #989fa7;
+      top: 0;
+      left: 0;
+      width: 19px;
+      height: 19px;
+      border: 1px solid #dadde0;
+      transition: border .15s linear;
       box-sizing: border-box;
       content: '';
     }
