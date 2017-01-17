@@ -127,26 +127,53 @@
     a {
       color: #21c4d6;
       font-weight: 800;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: #21c4d6;
+      }
     }
   }
 
   &__main-btn {
     position: relative;
     background: none;
+    padding-right: 25px;
     border: none;
     color: #eaeaea;
     font-size: 24px;
     transform: translate(-9px);
+    transition: color 0.3s;
+
+    &:hover {
+      color: darken(#eaeaea,15%);
+      &:before,&:after {
+        background: darken(#eaeaea,15%);
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 35%;
+      right: 5px;
+      transform: rotate(45deg);
+      width: 11px;
+      height: 2px;
+      background: #eaeaea;
+      transition: background 0.3s;
+      content: '';
+    }
 
     &:after {
       position: absolute;
-      top: 50%;
-      right: -14px;
-      transform: translateY(-50%);
-      width: 10px;
-      height: 17px;
-      background: url(../img/arrow.png) center center no-repeat;
-      background-size: cover;
+      top: 57%;
+      right: 5px;
+      transform: rotate(-45deg);
+      width: 11px;
+      height: 2px;
+      background: #eaeaea;
+      transition: background 0.3s;
       content: '';
     }
   }
