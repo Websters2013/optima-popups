@@ -1,0 +1,190 @@
+.information label{
+  display: block;
+  width: 100%;
+  margin-bottom: 9px;
+  padding-left: 15px;
+  font-family: 'montserrat-bold', sans-serif;
+  font-size: 13px;
+  color:#949ba3;
+}
+.information input{
+  width: 100%;
+  height: 42px;
+  margin-bottom: 9px;
+  padding: 0 11px;
+  color: #231f20;
+  font-family: 'montserrat-regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  border: 1px solid #dadde0;
+}
+.information input.region{
+  width: 19.2%;
+}
+.information input.address{
+  width: 57%;
+}
+.information input.zip-code{
+  width: 40%;
+}
+.information input.card-holder-name{
+  width: 51%;
+}
+.information_billing{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: auto;
+}
+.information_billing__column-1{
+  display: flex;
+  justify-content: space-between;
+  width: 516px;
+}
+.information_billing__column-1 fieldset{
+  width: 46.3%;
+}
+.information_shipment .information-row{
+  width: 417px;
+}
+.information_billing__column-2{
+  width: 454px;
+}
+.information_shipment-store .information-row{
+  width: 326px;
+}
+.information-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.information .websters-select{
+  width: 38%;
+}
+.information .nice-check label {
+  display: inline-block;
+  padding-left: 31px;
+  font-size: 15px;
+  font-family: 'montserrat-regular', sans-serif;
+}
+.information .btn-wrap{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.dropdown-inner{
+  position: relative;
+}
+.dropdown-inner .devices-set__links {
+}
+.information_shipment .nice-radio-orange{
+  display: flex;
+}
+.information .nice-radio-orange label {
+  display: flex;
+  color: #777777;
+  font-size: 11px;
+  padding-left: 28px;
+  font-family: 'montserrat-light', sans-serif;
+}
+.information .nice-radio-orange label span{
+  color:#000;
+}
+.information .nice-radio-orange fieldset{
+  margin-right: 20px;
+}
+.information .information-row.select-store_2 .websters-select{
+  width: 48.3%;
+}
+.information .information-row.select-store_2{
+  margin-bottom: 10px;
+}
+.information .information-row.select-store_1 .websters-select{
+  width: 100%;
+}
+.information .websters-select__item{
+  font-size: 15px;
+  color: #949ba3;
+  font-family: 'montserrat-regular', sans-serif;
+}
+.summary_order{
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.summary_order .summary__item_payment{
+  border: none;
+}
+.summary_order .btn-wrap{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.summary_order .btn_6 {
+  width: auto;
+  padding: 0 55px;
+}
+.information .eligibility__checkers {
+  margin-top: 6px;
+}
+.information .nice-check {
+  margin: 0 0 -5px;
+}
+.information .devices-set__links {
+  margin: 0 19px 13px 0;
+}
+.information_shipment-store,
+.information_shipment{
+  padding-top: 7px;
+}
+.information_payment{
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 7px;
+}
+.information_payment .information_billing__column-1{
+  flex-flow: row wrap;
+  width: 344px;
+  margin-right: 40px;
+}
+.information_payment .information_billing__column-1 .websters-select {
+  width: 46%;
+}
+.information_payment .information_billing__column-1 div:first-child{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.information_payment .information_billing__column-2 {
+  width: 502px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.information_payment .information_billing__column-1>div{
+  width: 100%;
+}
+.information_payment .information_billing__column-2>div:first-child{
+  width: 61.7%;
+}
+.information_payment .information_billing__column-2>div:last-child{
+  width: 30%;
+}
+.information_payment .information_billing__column-2 .websters-select {
+  width: 48.3%;
+}
+.tabs dl dd {
+  position: absolute;
+  top: 35px !important;
+  left: 0;
+}
+
+@media (min-width: $desktop) {
+  .information{
+    padding-left: 33px;
+  }
+  .information_billing__column-2{
+    padding-right: 37px;
+  }
+
+}

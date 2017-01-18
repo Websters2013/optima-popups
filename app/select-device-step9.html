@@ -119,7 +119,7 @@
                 <a href="#">Defaults & Eligibility</a>
                 <a href="#">Select Device</a>
                 <a href="#">Select Plan & Customize</a>
-                <a href="#" class="active">Summary & Checkout</a>
+                <a href="#" class="active">Checkout</a>
             </div>
         </div>
         <!-- /steps -->
@@ -134,7 +134,462 @@
                 <div class="dropdown">
 
                     <!-- dropdown__title -->
-                    <h2 class="dropdown__title active">SUMMARY</h2>
+                    <h2 class="dropdown__title">billing information</h2>
+                    <!-- /dropdown__title -->
+
+                    <!-- dropdown__wrap -->
+                    <div class="dropdown__wrap">
+
+                        <!-- information -->
+                        <form class="information information_billing">
+
+                            <div class="information_billing__column-1">
+
+                                <fieldset>
+                                    <label>Account Name</label>
+                                    <input type="text" name="first-name" id="first-name" placeholder="First name">
+                                    <input type="text" name="last-name" id="last-name" placeholder="Last name">
+                                </fieldset>
+
+                                <fieldset>
+                                    <label>Contact Inforamtion</label>
+                                    <input type="text" name="phone-number" id="phone-number" placeholder="Phone number">
+                                    <input type="text" name="email-address" id="email-address" placeholder="Email address">
+                                </fieldset>
+
+                            </div>
+
+                            <div class="information_billing__column-2">
+
+                                <!-- information-row -->
+                                <div class="information-row">
+
+                                    <label>Billing address</label>
+
+                                    <select class="country" name="country3" id="country" data-required>
+                                        <option value="0">Country</option>
+                                        <option value="1">Country1</option>
+                                        <option value="2">Country2</option>
+                                    </select>
+
+                                    <select class="city" name="city" id="city" data-required>
+                                        <option value="0">City</option>
+                                        <option value="1">City1</option>
+                                        <option value="2">City2</option>
+                                    </select>
+
+                                    <input class="region" type="text" name="region" id="region" placeholder="Region">
+
+                                </div>
+                                <!-- information-row -->
+
+                                <!-- information-row -->
+                                <div class="information-row">
+
+                                    <input class="address" type="text" name="address" id="address" placeholder="Address">
+                                    <input class='zip-code' type="text" name="zip-code" id="zip-code" placeholder="Zip code">
+
+                                </div>
+                                <!-- information-row -->
+
+                                <fieldset>
+
+                                    <!-- eligibility__checkers -->
+                                    <ul class="eligibility__checkers">
+                                        <li class="nice-check">
+                                            <input type="checkbox" id="t1">
+                                            <label for="t1">Ship to this address</label>
+                                        </li>
+                                    </ul>
+                                    <!-- /eligibility__checkers -->
+
+                                </fieldset>
+
+                            </div>
+
+                            <div class="btn-wrap">
+                                <button type="submit" class="btn btn_6">Continue</button>
+                            </div>
+
+                        </form>
+                        <!-- billing -->
+
+                    </div>
+                    <!-- /dropdown__wrap -->
+
+                    <!-- dropdown__title -->
+                    <h2 class="dropdown__title">Shipping Information</h2>
+                    <!-- /dropdown__title -->
+
+                    <!-- dropdown__wrap -->
+                    <div class="dropdown__wrap">
+
+                        <!-- tabs -->
+                        <div class="tabs information">
+
+                            <dl>
+
+                                <!-- devices-set__links -->
+                                <dt class="devices-set__links active">Shipment</dt>
+                                <!-- devices-set__links -->
+
+                                <dd>
+
+                                    <!-- tabs__content -->
+                                    <div class="tabs__content">
+
+                                        <!-- information -->
+                                        <form class="information_shipment">
+
+                                                <!-- information-row -->
+                                                <div class="information-row">
+
+                                                    <label>Shipment address</label>
+
+                                                    <select class="country" name="country4" id="country1" data-required>
+                                                        <option value="0">Country</option>
+                                                        <option value="1">Country1</option>
+                                                        <option value="2">Country2</option>
+                                                    </select>
+
+                                                    <select class="city" name="city" id="city1" data-required>
+                                                        <option value="0">City</option>
+                                                        <option value="1">City1</option>
+                                                        <option value="2">City2</option>
+                                                    </select>
+
+                                                    <input class="region" type="text" name="region" id="region1" placeholder="Region">
+
+                                                </div>
+                                                <!-- information-row -->
+
+                                                <!-- information-row -->
+                                                <div class="information-row">
+
+                                                    <input class="address" type="text" name="address" id="address1" placeholder="Address">
+                                                    <input class='zip-code' type="text" name="zip-code" id="zip-code1" placeholder="Zip code">
+
+                                                </div>
+                                                <!-- information-row -->
+
+                                                <!-- nice-radio-orange -->
+                                                <div class="nice-radio-orange">
+
+                                                    <fieldset>
+                                                        <input type="radio" checked id="res-1" name="res" value="">
+                                                        <label for="res-1">Normal shipment (5-7 business days)</label>
+                                                    </fieldset>
+
+                                                    <fieldset>
+                                                        <input type="radio" id="res-2" name="res" value="">
+                                                        <label for="res-2">Express shipment (1-2 business days) - <span>additional $15</span></label>
+                                                    </fieldset>
+
+                                                </div>
+                                                <!-- /nice-radio-orange -->
+
+                                            <div class="btn-wrap">
+                                                <button type="submit" class="btn btn_6">Continue</button>
+                                            </div>
+
+                                        </form>
+                                        <!-- billing -->
+
+                                    </div>
+                                    <!-- /tabs__content -->
+
+                                </dd>
+
+                                <!-- devices-set__links -->
+                                <dt class="devices-set__links">Store pick up</dt>
+                                <!-- /devices-set__links -->
+
+                                <dd>
+
+                                    <!-- tabs__content -->
+                                    <div class="tabs__content">
+
+                                        <!-- information -->
+                                        <form class="information_shipment-store">
+
+                                            <!-- information-row -->
+                                            <div class="information-row select-store_2">
+
+                                                <label>Select a store</label>
+
+                                                <select class="country" name="country5" id="country3" data-required>
+                                                    <option value="0">Country</option>
+                                                    <option value="1">Country1</option>
+                                                    <option value="2">Country2</option>
+                                                </select>
+
+                                                <select class="city" name="city" id="city3" data-required>
+                                                    <option value="0">City</option>
+                                                    <option value="1">City1</option>
+                                                    <option value="2">City2</option>
+                                                </select>
+
+
+                                            </div>
+                                            <!-- information-row -->
+
+                                            <!-- information-row -->
+                                            <div class="information-row select-store_1">
+
+                                                <select class="select-store" name="country6" id="select-store" data-required>
+                                                    <option value="0">Select store</option>
+                                                    <option value="1">Select store1</option>
+                                                    <option value="2">Select store2</option>
+                                                </select>
+
+                                            </div>
+                                            <!-- information-row -->
+
+                                            <div class="btn-wrap">
+                                                <button type="submit" class="btn btn_6">Continue</button>
+                                            </div>
+
+                                        </form>
+                                        <!-- billing -->
+
+                                    </div>
+                                    <!-- /tabs__content -->
+
+                                </dd>
+
+                            </dl>
+
+                        </div>
+                        <!-- /tabs -->
+
+                    </div>
+                    <!-- /dropdown__wrap -->
+
+                    <!-- dropdown__title -->
+                    <h2 class="dropdown__title active">Payment Information</h2>
+                    <!-- /dropdown__title -->
+
+                    <!-- dropdown__wrap -->
+                    <div class="dropdown__wrap">
+
+                        <!-- tabs -->
+                        <div class="tabs information">
+
+                            <dl>
+
+                                <!-- devices-set__links -->
+                                <dt class="devices-set__links active">Credit Card</dt>
+                                <!-- devices-set__links -->
+
+                                <dd>
+
+                                    <!-- tabs__content -->
+                                    <div class="tabs__content">
+
+                                        <!-- information -->
+                                        <form class="information_payment">
+
+                                            <div class="information_billing__column-1">
+
+                                                <div>
+                                                    <label>Select Card</label>
+                                                    <select class="country" name="country7" id="select-card1" data-required>
+                                                        <option value="0">Select card</option>
+                                                        <option value="1">Select card1</option>
+                                                        <option value="2">Select card2</option>
+                                                    </select>
+                                                    <input class="card-holder-name" type="text" name="card-holder-name" id="card-holder-name" placeholder="Card holder name">
+                                                </div>
+
+                                                <div>
+                                                    <input type="text" name="card-number" id="card-number" placeholder="Card number">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="information_billing__column-2">
+
+                                                <!-- information-row -->
+                                                <div class="information-row">
+
+                                                    <label>Expiration date</label>
+
+                                                    <select class="month" name="month1" id="month1" data-required>
+                                                        <option value="0">Month</option>
+                                                        <option value="1">Month1</option>
+                                                        <option value="2">Month2</option>
+                                                    </select>
+
+                                                    <select class="year" name="year" id="year" data-required>
+                                                        <option value="0">Year</option>
+                                                        <option value="1">Year1</option>
+                                                        <option value="2">Year2</option>
+                                                    </select>
+
+                                                </div>
+                                                <!-- information-row -->
+
+                                                <!-- information-row -->
+                                                <div class="information-row">
+
+                                                    <label>CVV (?)</label>
+
+                                                    <input class="cvv" type="text" name="region" id="cvv" placeholder="CVV">
+
+                                                </div>
+                                                <!-- information-row -->
+
+                                            </div>
+
+                                            <div class="btn-wrap">
+                                                <button type="submit" class="btn btn_6">Continue</button>
+                                            </div>
+
+                                        </form>
+                                        <!-- billing -->
+
+                                    </div>
+                                    <!-- /tabs__content -->
+
+                                </dd>
+
+                                <!-- devices-set__links -->
+                                <dt class="devices-set__links">PayPal</dt>
+                                <!-- /devices-set__links -->
+
+                                <dd>
+
+                                    <!-- tabs__content -->
+                                    <div class="tabs__content">
+
+                                        <!-- information -->
+                                        <form class="information_shipment-store">
+
+                                            <!-- information-row -->
+                                            <div class="information-row select-store_2">
+
+                                                <label>Billing address</label>
+
+                                                <select class="country" name="country1" id="country2" data-required>
+                                                    <option value="0">Country</option>
+                                                    <option value="1">Country1</option>
+                                                    <option value="2">Country2</option>
+                                                </select>
+
+                                                <select class="city" name="city" id="city2" data-required>
+                                                    <option value="0">City</option>
+                                                    <option value="1">City1</option>
+                                                    <option value="2">City2</option>
+                                                </select>
+
+
+                                            </div>
+                                            <!-- information-row -->
+
+                                            <!-- information-row -->
+                                            <div class="information-row select-store_1">
+
+                                                <select class="select-store" name="country2" id="select-store5" data-required>
+                                                    <option value="0">Select store</option>
+                                                    <option value="1">Select store1</option>
+                                                    <option value="2">Select store2</option>
+                                                </select>
+
+                                            </div>
+                                            <!-- information-row -->
+
+                                            <div class="btn-wrap">
+                                                <button type="submit" class="btn btn_6">Continue</button>
+                                            </div>
+
+                                        </form>
+                                        <!-- billing -->
+
+                                    </div>
+                                    <!-- /tabs__content -->
+
+                                </dd>
+
+                            </dl>
+
+                        </div>
+                        <!-- /tabs -->
+
+                    </div>
+                    <!-- /dropdown__wrap -->
+
+                    <!-- dropdown__title -->
+                    <h2 class="dropdown__title active">Order overview</h2>
+                    <!-- /dropdown__title -->
+
+                    <!-- dropdown__wrap -->
+                    <div class="dropdown__wrap">
+
+                        <div class="summary summary_order">
+
+                            <!-- summary__item -->
+                            <div class="summary__item">
+
+                                <ul>
+                                    <li>Order ID<span class="summary__name">1432543563</span></li>
+                                    <li>Estimated delivery date<span class="summary__name">14/05/2017</span></li>
+                                </ul>
+
+                            </div>
+                            <!-- /summary__item -->
+
+                            <!-- summary__item -->
+                            <div class="summary__item summary__item_payment">
+
+                                <ul>
+
+                                    <li class="summary__header-title">
+                                        <div class="first-col">Upfront Charges</div>
+                                        <div class="second-col">Price</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="first-col">iPhone 7 Down Payment</div>
+                                        <div class="second-col">$200</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="first-col">Premium Number</div>
+                                        <div class="second-col">$20</div>
+                                    </li>
+
+                                    <li class="summary__header-title">Installment Charges</li>
+
+                                    <li>
+                                        <div class="first-col">iPhone 7</div>
+                                        <div class="second-col"><div><span>12 Payments of</span> $15</div> <span>First payment: 1/26/17</span></div>
+                                    </li>
+
+                                    <li class="summary__header-title">Recurring Charges</li>
+
+                                    <li>
+                                        <div class="first-col">Frequent Traveler plan</div>
+                                        <div class="second-col">$20 <span>Per Month</span></div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <!-- /summary__item -->
+
+                            <!-- btn-wrap -->
+                            <div class="btn-wrap">
+                                <button type="submit" class="btn btn_6">Confirm & Place Order</button>
+                            </div>
+                            <!-- /btn-wrap -->
+
+                        </div>
+
+                    </div>
+                    <!-- /dropdown__wrap -->
+
+                    <!-- dropdown__title -->
+                    <h2 class="dropdown__title">SUMMARY</h2>
                     <!-- /dropdown__title -->
 
                     <!-- dropdown__wrap -->
@@ -245,16 +700,6 @@
 
                         </div>
                         <!-- /summary -->
-
-                    </div>
-                    <!-- /dropdown__wrap -->
-
-                    <!-- dropdown__title -->
-                    <h2 class="dropdown__title">CheckOut</h2>
-                    <!-- /dropdown__title -->
-
-                    <!-- dropdown__wrap -->
-                    <div class="dropdown__wrap">
 
                     </div>
                     <!-- /dropdown__wrap -->
