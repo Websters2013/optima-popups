@@ -212,8 +212,8 @@
         //private properties
         var _self = this,
             _obj = obj,
-            _wrap = _obj.find( '.dropdown__wrap' ),
-            _title = _obj.find( '.dropdown__title' );
+            _wrap = _obj.find( '> .dropdown__wrap' ),
+            _title = _obj.find( '> .dropdown__title' );
 
         //private methods
         var _constructor = function(){
@@ -239,9 +239,6 @@
             },
             _open = function( elem ) {
                 var nextElem = elem.next();
-
-                _obj.find( '.dropdown__title' ).removeClass('active');
-                _wrap.slideUp();
                 
                 elem.addClass( 'active' );
 
