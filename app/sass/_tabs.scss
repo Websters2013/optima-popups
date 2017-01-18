@@ -8,9 +8,12 @@
   transition: min-height 0.3s linear;
 }
 .tabs dl {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
 .tabs dt {
+  order: 1;
   cursor: pointer;
 
 }
@@ -19,6 +22,7 @@
   visibility: visible;
 }
 .tabs dd {
+  order: 2;
   opacity: 0;
   visibility: hidden;
   height: 0;
@@ -28,7 +32,7 @@
   transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
 }
 .tabs.tabs_animated1 .tabs__content {
-  transform-origin: 50% 0 0px;
+  transform-origin: 50% 0 0;
   transform: perspective(870px) rotateY(0deg) rotateX(-90deg);
   transition: transform 0.3s ease;
 }

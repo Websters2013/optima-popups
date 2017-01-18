@@ -5,7 +5,7 @@
         $( '.tabs' ).each( function(){
             new Tabs( {
                 obj: $( this ),
-                showType: 2, // if "showType = 0" tabs will be without any animations
+                showType: 0, // if "showType = 0" tabs will be without any animations
                 activeIndex: function( index ){
                     console.log( index )
                  }
@@ -121,7 +121,10 @@
             },
             _addScroll = function() {
 
-                _tabsContent.find('.tabs__content').perfectScrollbar( );
+                _tabsContent.find('.tabs__content').perfectScrollbar({
+                        suppressScrollX : 'true'
+                    }
+                );
 
             },
             _init = function() {
@@ -234,7 +237,10 @@
             },
             _addScroll = function() {
 
-                _wrap.perfectScrollbar();
+                _wrap.perfectScrollbar({
+                        suppressScrollX : 'true'
+                    }
+                );
 
             },
             _open = function( elem ) {
