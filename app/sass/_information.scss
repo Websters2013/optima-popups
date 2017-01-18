@@ -179,6 +179,17 @@
   left: 0;
 }
 
+.question{
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.active-img .question{
+  display: inline-block;
+}
+
 @media (min-width: $desktop) {
   .information{
     padding-left: 33px;

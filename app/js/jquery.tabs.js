@@ -216,7 +216,8 @@
         var _self = this,
             _obj = obj,
             _wrap = _obj.find( '> .dropdown__wrap' ),
-            _title = _obj.find( '> .dropdown__title' );
+            _title = _obj.find( '> .dropdown__title' ),
+            _btnNext = _wrap.find( '.open-next' );
 
         //private methods
         var _constructor = function(){
@@ -276,6 +277,27 @@
                             _open( curElem );
                         }
                         return false;
+                    }
+                } );
+
+                _btnNext.on( {
+                    click: function() {
+
+                        var next = $( this).parents('.dropdown__wrap'),
+                            curElem = next.find( '> .dropdown__title' ),
+                            nextOpen = next.next(),
+                            nextWrap = nextOpen.next(),
+                            prevActive = next.prev();
+
+                            _hide( _title );
+                            _open( curElem );
+                            console.log(prevActive, 2);
+                            prevActive.addClass('active-img');
+
+                            _open( nextOpen );
+
+                        return false;
+
                     }
                 } );
 
