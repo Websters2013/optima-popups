@@ -134,8 +134,11 @@
                   <p class="dropdown__title active defaults__title">SETUP PRIMARY PROPERTIES AS</p>
                   <!-- /defaults__title -->
 
-                  <!-- defaults__wrap-1 -->
-                  <div class="defaults__wrap-1 nice-radio-orange dropdown__wrap">
+                  <!-- dropdown__wrap -->
+                  <div class="dropdown__wrap">
+                  
+                    <!-- defaults__wrap-1 -->
+                    <div class="defaults__wrap-1 nice-radio-orange">
 
                       <!-- defaults__res -->
                       <div class="defaults__res">
@@ -164,106 +167,115 @@
                       </div>
                       <!-- /default__res -->
 
-                    <!-- defaults__business -->
-                    <div class="defaults__business">
+                      <!-- defaults__business -->
+                      <div class="defaults__business">
 
-                      <!-- defaults__business-title -->
-                      <p class="defaults__business-title">
-                        Business
-                      </p>
-                      <!-- /defaults__business-title -->
+                        <!-- defaults__business-title -->
+                        <p class="defaults__business-title">
+                          Business
+                        </p>
+                        <!-- /defaults__business-title -->
 
-                      <p>
-                        <input type="radio" checked id="bus-1" name="bus" value="">
-                        <label for="bus-1">Generic</label>
-                      </p>
+                        <p>
+                          <input type="radio" checked id="bus-1" name="bus" value="">
+                          <label for="bus-1">Generic</label>
+                        </p>
 
-                      <p>
-                        <input type="radio" id="bus-2" name="bus" value="">
-                        <label for="bus-2">New Start-up</label>
-                      </p>
+                        <p>
+                          <input type="radio" id="bus-2" name="bus" value="">
+                          <label for="bus-2">New Start-up</label>
+                        </p>
 
-                      <p>
-                        <input type="radio" id="bus-3" name="bus" value="">
-                        <label for="bus-3">New SME</label>
-                      </p>
+                        <p>
+                          <input type="radio" id="bus-3" name="bus" value="">
+                          <label for="bus-3">New SME</label>
+                        </p>
+
+                      </div>
+                      <!-- /defaults__business -->
 
                     </div>
-                    <!-- /defaults__business -->
-
+                    <!-- /defaults__wrap-1 -->
+                      
                   </div>
-                  <!-- /defaults__wrap-1 -->
+                  <!-- /dropdown__wrap -->
 
                   <!-- defaults__title -->
                   <p class="dropdown__title defaults__title defaults__title_2">Eligibility</p>
                   <!-- /defaults__title -->
 
-                  <!-- defaults__wrap-2 -->
-                  <div class="defaults__wrap-2 dropdown__wrap eligibility">
+                  <!-- dropdown__wrap -->
+                  <div class="dropdown__wrap">
+                    
+                    <!-- defaults__wrap-2 -->
+                    <div class="defaults__wrap-2 eligibility">
 
-                    <div class="defaults__text popup__note">Please check customer eligibility</div>
+                      <div class="defaults__text popup__note">Please check customer eligibility</div>
 
-                    <!-- defaults__container -->
-                    <div class="defaults__container">
+                      <!-- defaults__container -->
+                      <div class="defaults__container">
 
-                      <!-- eligibility__address -->
-                      <div class="eligibility__address">
-
-                        <fieldset>
-                            <label for="country">Country<span>*</span></label>
-                            <select name="country" id="country" data-required>
-                                <option value="0">Select Country</option>
-                                <option value="1">Select Country</option>
-                                <option value="2">Select Country</option>
-                            </select>
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="zipcode">Zipcode<span>*</span></label>
-                            <input class="defaults__inp" type="text" name="zip" id="zipcode" placeholder="Fill in zip code" data-required />
-                            <label class="error">* Sorry, services are not available in the selected area</label>
-                        </fieldset>
-
-                      </div>
-                      <!-- /eligibility__address -->
-
-                      <!-- eligibility__column -->
-                      <div class="eligibility__column">
+                        <!-- eligibility__address -->
+                        <div class="eligibility__address">
 
                           <fieldset>
-                              <label>Customer Type <span></span></label>
-
-                              <!-- eligibility__checkers -->
-                              <ul class="eligibility__checkers">
-                                  <li class="nice-check">
-                                      <input type="checkbox" id="t1"/>
-                                      <label for="t1">Platinum</label>
-                                  </li>
-                                  <li class="nice-check">
-                                      <input type="checkbox" id="t2"/>
-                                      <label for="t2">Gold</label>
-                                  </li>
-                                  <li class="nice-check">
-                                      <input type="checkbox" id="t3"/>
-                                      <label for="t3">Silver</label>
-                                  </li>
-                                  <li class="nice-check">
-                                      <input type="checkbox" id="t4"/>
-                                      <label for="t4">Regular</label>
-                                  </li>
-                              </ul>
-                              <!-- /eligibility__checkers -->
-
+                              <label for="country">Country<span>*</span></label>
+                              <select name="country" id="sim-type" data-required>
+                                  <option value="0">Select Country1</option>
+                                  <option value="1">Select Country2</option>
+                                  <option value="2">Select Country3</option>
+                              </select>
                           </fieldset>
 
+                          <fieldset>
+                              <label for="zipcode">Zipcode<span>*</span></label>
+                              <input class="defaults__inp" type="text" name="zip" id="zipcode" placeholder="Fill in zip code" data-required />
+                              <label class="error">* Sorry, services are not available in the selected area</label>
+                          </fieldset>
+
+                        </div>
+                        <!-- /eligibility__address -->
+
+                        <!-- eligibility__column -->
+                        <div class="eligibility__column">
+
+                            <fieldset>
+                                <label>Customer Type <span></span></label>
+
+                                <!-- eligibility__checkers -->
+                                <ul class="eligibility__checkers">
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="t1"/>
+                                        <label for="t1">Platinum</label>
+                                    </li>
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="t2"/>
+                                        <label for="t2">Gold</label>
+                                    </li>
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="t3"/>
+                                        <label for="t3">Silver</label>
+                                    </li>
+                                    <li class="nice-check">
+                                        <input type="checkbox" id="t4"/>
+                                        <label for="t4">Regular</label>
+                                    </li>
+                                </ul>
+                                <!-- /eligibility__checkers -->
+
+                            </fieldset>
+
+                        </div>
+                        <!-- /eligibility__column -->
+
                       </div>
-                      <!-- /eligibility__column -->
+                      <!-- /defaults__container -->
 
                     </div>
-                    <!-- /defaults__container -->
-
+                    <!-- defaults__wrap-2 -->
+  
                   </div>
-                  <!-- defaults__wrap-2 -->
+                  <!-- /dropdown__wrap -->
 
               </div>
               <!-- /defaults -->
