@@ -255,6 +255,7 @@
 
             },
             _hide = function( elem ) {
+
                 var nextElem = elem.next();
 
                 elem.removeClass( 'active' );
@@ -284,17 +285,12 @@
                     click: function() {
 
                         var next = $( this).parents('.dropdown__wrap'),
-                            curElem = next.find( '> .dropdown__title' ),
                             nextOpen = next.next(),
-                            nextWrap = nextOpen.next(),
                             prevActive = next.prev();
 
                             _hide( _title );
-                            _open( curElem );
-                            console.log(prevActive, 2);
-                            prevActive.addClass('active-img');
-
                             _open( nextOpen );
+                            prevActive.addClass('active-img');
 
                         return false;
 

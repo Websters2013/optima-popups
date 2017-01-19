@@ -91,16 +91,10 @@
 
                         if ( _menu.height() - 10 > _window.height() && _obj.hasClass( 'menu-btn_close' ) ) {
 
-                            $( _menu ).perfectScrollbar({
-                                    suppressScrollX : 'true'
-                                }
-                            );
-                        } else {
-                            $( _menu ).perfectScrollbar("destroy");
+                            $( _menu ).perfectScrollbar( 'update' );
                         }
-
                     }
-                } )
+                } );
 
             },
             _init = function() {
