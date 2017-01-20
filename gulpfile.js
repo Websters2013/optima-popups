@@ -34,7 +34,8 @@ var paths = {
                 'app/js/jquery.websters-select.js',
                 'app/js/jquery.popup.js',
                 'app/js/jquery.tabs.js',
-                'app/js/jquery.devices.js'
+                'app/js/jquery.devices.js',
+                'app/js/jquery.step2-3.js'
             ]
         }
     ],
