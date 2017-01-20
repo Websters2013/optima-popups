@@ -129,6 +129,17 @@
     transform: translateY(-9px);
   }
 
+  &_submit-gray {
+    background-color: #ccc;
+    border-color: #ccc;
+    pointer-events: none;
+    &:hover {
+      cursor: default;
+      background-color: #ccc !important;
+      border-color: #ccc !important;
+    }
+  }
+
 }
 
 @media (min-width: $desktop) {
