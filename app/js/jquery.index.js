@@ -9,9 +9,15 @@
        
     } );
 
-      $.each( $( '.menu-btn' ), function() {
-          new Menu ( $( this ) );
-      } );
+    $.each( $( '.menu-btn' ), function() {
+        new Menu ( $( this ) );
+    } );
+
+    $.each( $( '.site__main-btn' ), function() {
+       
+      new  EneableButton ( $( this ) );
+       
+    } );
 
   } );
 
@@ -107,5 +113,50 @@
 
         _init();
     };
+
+    var EneableButton = function ( obj ) {
+    
+      //private properties
+      var _btn = obj,
+          _fields = $( '.signin' );
+
+      //private methods
+      var _constructor = function () {
+    
+              _onEvents();
+      
+          },
+      _onEvents = function () {   
+
+          _fields.on ( {
+              blur: function () {
+               
+                _eneable();
+
+              }
+          } ); 
+    
+      },
+      _eneable = function () {
+
+        $.each( _fields, function() {
+
+            if ( $(this).val() != '' ) {
+
+                _btn.removeClass( 'site__main-btn_disabled' );
+
+            } else {
+
+                _btn.addClass( 'site__main-btn_disabled' );
+
+            }   
+
+        } );
+
+      };
+    
+      _constructor ();
+    
+    }
  
 } ) ();
