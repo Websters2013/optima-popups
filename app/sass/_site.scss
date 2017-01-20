@@ -141,15 +141,15 @@
     background: none;
     padding-right: 25px;
     border: none;
-    color: #eaeaea;
+    color: #d1d1d1;
     font-size: 24px;
     transform: translate(-9px);
     transition: color 0.3s;
 
     &:hover {
-      color: darken(#eaeaea,15%);
+      color: darken(#d1d1d1,12%);
       &:before,&:after {
-        background: darken(#eaeaea,15%);
+        background: darken(#d1d1d1,12%);
       }
     }
 
@@ -160,7 +160,7 @@
       transform: rotate(45deg);
       width: 11px;
       height: 2px;
-      background: #eaeaea;
+      background: #d1d1d1;
       transition: background 0.3s;
       content: '';
     }
@@ -172,7 +172,7 @@
       transform: rotate(-45deg);
       width: 11px;
       height: 2px;
-      background: #eaeaea;
+      background: #d1d1d1;
       transition: background 0.3s;
       content: '';
     }
