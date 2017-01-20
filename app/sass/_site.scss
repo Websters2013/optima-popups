@@ -146,6 +146,11 @@
     transform: translate(-9px);
     transition: color 0.3s;
 
+    &_disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+
     &:hover {
       color: darken(#d1d1d1,12%);
       &:before,&:after {
