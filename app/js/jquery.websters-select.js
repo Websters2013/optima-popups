@@ -30,6 +30,10 @@
         var _addWrap = function(){
                 var curText = '';
 
+                if ( _obj.attr( 'data-placeholder' ) ) {
+                    curText = _obj.attr( 'data-placeholder' );
+                }
+
                 _obj.css( {
                     opacity: 0
                 } );

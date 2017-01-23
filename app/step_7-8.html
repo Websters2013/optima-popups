@@ -116,7 +116,7 @@
             <!-- steps -->
             <div class="steps">
                 <div>
-                    <a href="#">Defaults & Eligibility</a>
+                    <a href="#">Account Preferences</a>
                     <a href="#">Select Device</a>
                     <a href="#" class="active">Select Plan & Customize</a>
                     <a href="#">Summary & Checkout</a>
@@ -465,23 +465,23 @@
                                         <dt>DATA</dt>
                                         <dd>
                                         <span>
-                                            <input type="radio" name="dat" id="data1">
+                                            <input type="radio" data-point="1" name="dat" id="data1" checked>
                                             <label for="data1">1GB</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="dat" id="data2">
-                                            <label for="data2">2GB</label>
+                                            <input type="radio" data-point="2" name="dat" id="data2">
+                                            <label for="data2">3GB</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="dat" id="data3">
+                                            <input type="radio" data-point="3" name="dat" id="data3">
                                             <label for="data3">5GB</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="dat" id="data4" checked>
-                                            <label for="data4">8GB</label>
+                                            <input type="radio" data-point="4" name="dat" id="data4">
+                                            <label for="data4">10GB</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="dat" id="data5">
+                                            <input type="radio" data-point="5" name="dat" id="data5">
                                             <label for="data5">UNLIMITED</label>
                                         </span>
                                         </dd>
@@ -491,23 +491,23 @@
                                         <dt>MINUTES</dt>
                                         <dd>
                                         <span>
-                                            <input type="radio" name="minutes" id="minutes1">
-                                            <label for="minutes1">200</label>
+                                            <input type="radio" data-point="1" name="minutes" id="minutes1" checked>
+                                            <label for="minutes1">100</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="minutes" id="minutes2">
-                                            <label for="minutes2">400</label>
+                                            <input type="radio" data-point="2" name="minutes" id="minutes2">
+                                            <label for="minutes2">300</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="minutes" id="minutes3" checked>
-                                            <label for="minutes3">600</label>
+                                            <input type="radio" data-point="3" name="minutes" id="minutes3">
+                                            <label for="minutes3">500</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="minutes" id="minutes4">
+                                            <input type="radio" data-point="4" name="minutes" id="minutes4">
                                             <label for="minutes4">1000</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="minutes" id="minutes5">
+                                            <input type="radio" data-point="5" name="minutes" id="minutes5">
                                             <label for="minutes5">UNLIMITED</label>
                                         </span>
                                         </dd>
@@ -517,23 +517,23 @@
                                         <dt>SMS</dt>
                                         <dd>
                                         <span>
-                                            <input type="radio" name="sms" id="sms1">
-                                            <label for="sms1">200</label>
+                                            <input type="radio" data-point="1" name="sms" id="sms1" checked>
+                                            <label for="sms1">100</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="sms" id="sms2">
-                                            <label for="sms2">400</label>
+                                            <input type="radio" data-point="2" name="sms" id="sms2">
+                                            <label for="sms2">200</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="sms" id="sms3" checked>
-                                            <label for="sms3">600</label>
+                                            <input type="radio" data-point="3" name="sms" id="sms3">
+                                            <label for="sms3">500</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="sms" id="sms4">
+                                            <input type="radio" data-point="4" name="sms" id="sms4">
                                             <label for="sms4">1000</label>
                                         </span>
                                             <span>
-                                            <input type="radio" name="sms" id="sms5">
+                                            <input type="radio" data-point="5" name="sms" id="sms5">
                                             <label for="sms5">UNLIMITED</label>
                                         </span>
                                         </dd>
@@ -541,15 +541,15 @@
                                 </div>
 
                                 <div class="plans__customize-total">
-                                    <p>Total plan points: 10</p>
-                                    <p class="red">Total plan points used: 12</p>
+                                    <p>Total plan points: 3</p>
+                                    <p class="red">Total plan points used: <span class="plans__customize-points">9</span></p>
 
                                     <dl>
                                         <dt>Price:</dt>
-                                        <dd><strong>$15</strong>Monthly</dd>
+                                        <dd><strong>$<span class="plans__customize-price">15</span></strong>Monthly</dd>
                                     </dl>
 
-                                    <p>Additional Fee for <span class="red">2</span> plan points: <span class="red">$10</span></p>
+                                    <p>Additional Fee for <span class="red">2</span> plan points: <span class="red">$<span class="plans__customize-price">10</span></span></p>
                                 </div>
 
                             </div>
@@ -715,6 +715,6 @@
 
     <script src="js/vendors/jquery-2.2.1.min.js"></script>
     <script src="js/vendors/perfect-scrollbar.jquery.min.js"></script>
-    <script src="js/index.min.js"></script>
+    <script src="js/plans.min.js"></script>
 </body>
 </html>

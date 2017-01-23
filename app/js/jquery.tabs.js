@@ -16,11 +16,17 @@
             new Dropdown( $( this ) );
         } );
 
-        $.each( $( '.defaults__title' ), function() {
-           
-          new  Toggle ( $( this ) );
-           
+        $.each( $( '.defaults' ), function() {
+
+          new  Default ( $( this ) );
+
         } );
+
+        // $.each( $( '.defaults__title' ), function() {
+        //
+        //   new  Toggle ( $( this ) );
+        //
+        // } );
 
     } );
 
@@ -313,10 +319,12 @@
         _constructor();
     };
 
-    var Toggle = function ( obj ) {
+    var Default = function ( obj ) {
     
       //private properties
-      var  _title = obj;
+      var  _obj = obj,
+          _wrap = _obj.find( '.defaults__wrap-1' ),
+          _inputs = _wrap.find( 'input' );
 
       //private methods
       var _constructor = function () {
@@ -325,25 +333,52 @@
       
           },
       _onEvents = function () {
-      
+
+          _inputs.on ( {
+              change: function () {
+               
+               $( '.defaults__title_2' ).trigger( 'click' );
+
+              }
+          } );
+
+      };
+    
+      _constructor ();
+    
+    };
+
+    var Toggle = function ( obj ) {
+
+      //private properties
+      var  _title = obj;
+
+      //private methods
+      var _constructor = function () {
+
+              _onEvents();
+
+          },
+      _onEvents = function () {
+
           _title.on ( {
               click: function () {
-               
+
                _addStyles();
 
               }
           } );
 
       },
-    
+
       _addStyles = function () {
 
         _title.toggleClass('defaults__title_open');
 
       };
-    
+
       _constructor ();
-    
+
     };
 
 } )();
