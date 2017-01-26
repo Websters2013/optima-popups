@@ -151,6 +151,19 @@
 
   }
 
+  &_2{
+    text-align: center;
+
+    .page-info__title{
+      top: 32px;
+      left: 50%;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+  }
+
 }
 
 @media (min-width: $desktop) {
