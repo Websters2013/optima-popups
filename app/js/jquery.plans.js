@@ -57,8 +57,6 @@
                 _points.text( points );
                 _price.text( price );
 
-                console.log('points = ', points, 'price = ', price)
-
             },
             _init = function(){
                 _obj[ 0 ].obj = _self;

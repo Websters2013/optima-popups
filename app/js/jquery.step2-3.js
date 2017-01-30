@@ -17,7 +17,10 @@
   
     //private properties
     var _btn = obj,
-        _field = $( '#zipcode' );
+        _field = $( '#zipcode' ),
+        _country = $( '.country' ),
+        _countrySelect = _country.find( 'select' ),
+        _state = $( '.state' );
 
     //private methods
     var _constructor = function () {
@@ -33,8 +36,20 @@
             	_eneable();
 
             }
-        } ); 
- 
+        } );
+
+        _countrySelect.on ( {
+            'change': function () {
+                var selectedVal = _countrySelect.find( 'option:selected' ).val();
+
+                if ( selectedVal == 'US' ) {
+                    _state.slideDown();
+                } else {
+                    _state.slideUp();
+                }
+            }
+        } );
+
     },
     _eneable = function () {
 
