@@ -1,0 +1,50 @@
+.thank-you {
+  text-align: center;
+  @include lato();
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    @include lato-bold();
+  }
+
+  p {
+    margin-bottom: 12px;
+    font-size: 13px;
+
+    a {
+      color: #000;
+      text-decoration: underline;
+      @include lato-bold();
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    padding: 27px 0 51px;
+    text-align: left;
+    font-size: 13px;
+    color: #777777;
+    @include montserrat-light();
+
+    dt {
+      font-size: 11px;
+      color: #949ba3;
+      @include montserrat-bold();
+    }
+
+    dd {
+      display: block;
+      padding: 7px 0 18px 1px;
+    }
+  }
+
+  .btn {
+    display: flex;
+    width: 260px;
+  }
+}

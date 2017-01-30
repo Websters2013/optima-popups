@@ -695,7 +695,7 @@
 
                             <!-- btn-wrap -->
                             <div class="btn-wrap">
-                                <button  class="btn btn_6">Confirm & Place Order</button>
+                                <button class="btn btn_6 popup__open" data-popup="thank-you">Confirm & Place Order</button>
                             </div>
                             <!-- /btn-wrap -->
 
@@ -731,25 +731,29 @@
 
 
 <!-- popup -->
-<div class="popup popup_2">
+<div class="popup popup_thank-you">
 
     <!-- popup__wrap -->
     <div class="popup__wrap">
 
         <!-- popup__content -->
-        <div class="popup__content popup__plan-select">
+        <div class="popup__content popup__thank-you">
 
             <a href="#" class="popup__close-inside popup__cancel">x</a>
 
-            <div class="dropdown">
-                <div class="dropdown__title">Customer Number</div>
-                <div class="dropdown__wrap">
+            <div class="thank-you">
+                <h2 class="thank-you__title">Thank you for your purchase!</h2>
+                <p>You will reveice a confirmation email for your purchase in a few short minutes.</p>
+                <p>You can track your order using your Order ID <a href="#">here</a></p>
 
-                </div>
-                <div class="dropdown__title">Select Number</div>
-                <div class="dropdown__wrap">
+                <dl class="thank-you__info">
+                    <dt>Order ID</dt>
+                    <dd>1432543563</dd>
+                    <dt>Estimated delivery date</dt>
+                    <dd>14/05/2017</dd>
+                </dl>
 
-                </div>
+                <a href="#" class="btn btn_3 popup__cancel">Print order details</a>
             </div>
 
         </div>
